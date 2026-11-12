@@ -1,1172 +1,1550 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Moisés Escobar Martínez, Backend Engineer en Querétaro. APIs, integraciones empresariales e ingeniería de datos con Node.js, NestJS, TypeScript y PHP/Laravel."
+    />
+    <meta name="author" content="Moisés Escobar Martínez" />
+    <meta name="theme-color" content="#101e30" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="es_MX" />
+    <meta
+      property="og:title"
+      content="Moisés Escobar Martínez · Backend Engineer"
+    />
+    <meta
+      property="og:description"
+      content="Desarrollo backend, integraciones empresariales e ingeniería de datos. Conoce mi experiencia y proyectos."
+    />
+    <meta property="og:url" content="https://moisesescobar.github.io/" />
+    <meta
+      property="og:image"
+      content="https://moisesescobar.github.io/assets/img/profile.jpg"
+    />
+    <meta property="og:image:alt" content="Moisés Escobar Martínez" />
+    <meta name="twitter:card" content="summary" />
+    <link rel="canonical" href="https://moisesescobar.github.io/" />
+    <link rel="icon" href="assets/img/favicon.png" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <script src="assets/js/main.js" defer></script>
+    <title>Moisés Escobar Martínez · Backend Engineer</title>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Saltar al contenido</a>
+    <header class="sidebar" id="header">
+      <a
+        class="identity"
+        href="#inicio"
+        aria-label="Moisés Escobar, ir al inicio"
+      >
+        <img src="assets/img/profile.jpg" alt="" width="88" height="88" />
+        <span
+          >Moisés Escobar<span class="identity-role"
+            >Backend Engineer</span
+          ></span
+        >
+      </a>
+      <button
+        class="menu-toggle"
+        type="button"
+        aria-controls="nav-menu"
+        aria-expanded="false"
+        hidden
+      >
+        Menú <span aria-hidden="true">☰</span>
+      </button>
+      <nav id="nav-menu" aria-label="Navegación principal">
+        <a href="#inicio" aria-current="location"
+          ><span class="nav-number" aria-hidden="true">01</span> Inicio</a
+        >
+        <a href="#about"
+          ><span class="nav-number" aria-hidden="true">02</span> Sobre mí</a
+        >
+        <a href="#resume"
+          ><span class="nav-number" aria-hidden="true">03</span> Experiencia</a
+        >
+        <a href="#projects"
+          ><span class="nav-number" aria-hidden="true">04</span> Proyectos</a
+        >
+        <a href="#skills"
+          ><span class="nav-number" aria-hidden="true">05</span>
+          Conocimientos</a
+        >
+        <a href="#education"
+          ><span class="nav-number" aria-hidden="true">06</span> Formación</a
+        >
+        <a href="#contact"
+          ><span class="nav-number" aria-hidden="true">07</span> Contacto</a
+        >
+      </nav>
+      <div class="sidebar-bottom">
+        <p>Querétaro, México</p>
+        <div class="social-links">
+          <a
+            href="https://github.com/moisesEscobar"
+            target="_blank"
+            rel="noopener noreferrer"
+            >GitHub ↗</a
+          ><a
+            href="https://www.linkedin.com/in/moises-escobar-martinez"
+            target="_blank"
+            rel="noopener noreferrer"
+            >LinkedIn ↗</a
+          >
+        </div>
+        <a
+          class="sidebar-cv"
+          href="assets/docs/CV_Moises_Escobar_Martinez.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
+          >Ver CV ↗</a
+        >
+      </div>
+    </header>
+    <main id="main" tabindex="-1">
+      <section class="hero" id="inicio" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow">Backend · Integraciones · Datos</p>
+          <h1 id="hero-title">Hola, soy<br /><span>Moisés Escobar.</span></h1>
+          <p class="hero-lead">
+            Construyo soluciones que conectan sistemas y datos.
+          </p>
+          <p class="hero-description">
+            Desarrollo APIs e integraciones empresariales que automatizan
+            procesos y mantienen la consistencia de la información. Más de 6
+            años de experiencia en desarrollo backend e ingeniería de datos.
+          </p>
+          <p class="hero-stack">
+            Node.js · TypeScript · NestJS · PHP/Laravel · SQL
+          </p>
+          <div class="actions">
+            <a class="button button-primary" href="#projects"
+              >Ver proyectos ↗</a
+            ><a
+              class="button button-secondary"
+              href="assets/docs/CV_Moises_Escobar_Martinez.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Ver CV ↗</a
+            ><a class="text-link" href="#contact">Contactar</a>
+          </div>
+        </div>
+        <div class="hero-note">
+          <span class="note-line" aria-hidden="true"></span>
+          <p>
+            Software que resuelve problemas.<br /><strong
+              >Integraciones que sostienen la operación.</strong
+            >
+          </p>
+        </div>
+        <a class="hero-next" href="#about"
+          >Conoce mi trayectoria <span aria-hidden="true">↓</span></a
+        >
+      </section>
 
-<head>
-	<meta charset="utf-8">
-	<meta content="width=device-width, initial-scale=1.0" name="viewport">
-	<meta name="description" content="Moisés Escobar Martínez Desarrollador De Software En Querétaro Mexico">
-	<meta name="keywords" content="Moisés Escobar, Backend, Node, Php,Analista de datos, Web">
-	<meta name="author" content="Moisés Escobar Martínez">
+      <section class="section" id="about" aria-labelledby="about-title">
+        <div class="section-heading">
+          <p class="eyebrow">Un poco de contexto</p>
+          <h2 id="about-title">Más allá del código.</h2>
+        </div>
+        <div class="about-grid">
+          <div class="about-copy">
+            <p class="lead">
+              Soy Ingeniero en Desarrollo de Software titulado, especializado en
+              backend, integración de sistemas empresariales e ingeniería de
+              datos.
+            </p>
+            <p>
+              He trabajado con APIs REST, sincronización de información,
+              automatización de operaciones y procesamiento de datos en sectores
+              como turismo, retail, autopistas y servicios.
+            </p>
+            <p>
+              Me interesa comprender el problema de negocio, evaluar
+              alternativas y construir soluciones seguras, mantenibles y capaces
+              de evolucionar. Combino desarrollo de software, análisis y
+              colaboración técnica para llevar las soluciones hasta su
+              operación.
+            </p>
+          </div>
+          <aside class="profile-card" aria-label="Perfil profesional">
+            <img
+              src="assets/img/profile.jpg"
+              alt="Retrato de Moisés Escobar Martínez"
+              width="160"
+              height="160"
+              loading="lazy"
+            />
+            <dl>
+              <div>
+                <dt>Especialidad</dt>
+                <dd>Backend e integraciones</dd>
+              </div>
+              <div>
+                <dt>Ubicación</dt>
+                <dd>Querétaro, México</dd>
+              </div>
+              <div>
+                <dt>Idiomas</dt>
+                <dd>Español nativo · Inglés técnico</dd>
+              </div>
+            </dl>
+          </aside>
+        </div>
+        <div class="specialty-grid">
+          <article class="specialty">
+            <span class="card-index" aria-hidden="true">01 /</span>
+            <h3>Servicios backend</h3>
+            <p>
+              APIs REST, reglas de negocio, documentación y mantenimiento de
+              servicios con Node.js, NestJS y PHP/Laravel.
+            </p>
+          </article>
+          <article class="specialty">
+            <span class="card-index" aria-hidden="true">02 /</span>
+            <h3>Integración de sistemas</h3>
+            <p>
+              Conexión de plataformas, sincronizaciones incrementales y por
+              lotes, autenticación y control de acceso.
+            </p>
+          </article>
+          <article class="specialty">
+            <span class="card-index" aria-hidden="true">03 /</span>
+            <h3>Ingeniería de datos</h3>
+            <p>
+              Modelado, SQL, pipelines ETL/ELT y revisión de calidad e
+              integridad de datos en entornos cloud.
+            </p>
+          </article>
+        </div>
+      </section>
 
-	<title>Moisés Escobar Martínez</title>
+      <section
+        class="section section-tinted"
+        id="resume"
+        aria-labelledby="experience-title"
+      >
+        <div class="section-heading">
+          <p class="eyebrow">Experiencia profesional</p>
+          <h2 id="experience-title">Una trayectoria conectando piezas.</h2>
+          <p>
+            Backend, plataformas empresariales y datos. Cada etapa suma una
+            perspectiva distinta.
+          </p>
+        </div>
+        <div class="timeline">
+          <article class="experience" id="actual">
+            <div class="experience-date">
+              <span class="status">Actual</span>
+              <p><time datetime="2023-12">Dic. 2023</time> — Presente</p>
+              <p>Remoto</p>
+            </div>
+            <div class="experience-body">
+              <p class="company">HOSTECH</p>
+              <h3>Backend Developer · Integraciones y Datos</h3>
+              <ul>
+                <li>
+                  Desarrollo y mantenimiento de APIs REST, servicios y
+                  orquestadores con Node.js, NestJS y TypeScript para conectar
+                  proveedores, sistemas de reservaciones y plataformas
+                  empresariales.
+                </li>
+                <li>
+                  Diseño de sincronizaciones incrementales y por lotes para
+                  agencias, agentes, clientes y reservas, incorporando
+                  validaciones y tratamiento de registros inconsistentes.
+                </li>
+                <li>
+                  Implementación de autenticación y autorización con Auth0, JWT
+                  y RBAC, con acceso según roles y estructura organizacional.
+                </li>
+                <li>
+                  Auditoría técnica de modelos y pipelines en Microsoft Fabric y
+                  Delta Lake: calidad, integridad referencial, duplicados y
+                  jerarquías en capas Bronze, Silver y Gold.
+                </li>
+              </ul>
+              <details>
+                <summary>Ver más responsabilidades y tecnologías</summary>
+                <div class="detail-content">
+                  <ul>
+                    <li>
+                      Mantenimiento y estabilización de aplicaciones heredadas
+                      en PHP/Laravel, diagnóstico de incidentes y seguimiento de
+                      servicios en producción.
+                    </li>
+                    <li>
+                      Administración y optimización de consultas y procesos en
+                      PostgreSQL, MariaDB/MySQL, MongoDB y Redis, con enfoque en
+                      integridad y desempeño.
+                    </li>
+                    <li>
+                      Evaluación de contratos API, paginación, latencias y
+                      riesgos de integración; colaboración en iniciativas
+                      relacionadas con Dynamics 365/ERP.
+                    </li>
+                    <li>
+                      Trabajo con Docker, administración de servidores en
+                      DigitalOcean y entornos de replicación en MySQL,
+                      PostgreSQL y MongoDB.
+                    </li>
+                  </ul>
+                  <p>
+                    <strong>Herramientas:</strong> Swagger/OpenAPI, Postman,
+                    GitHub, Bitbucket, Jira y pruebas unitarias.
+                  </p>
+                </div>
+              </details>
+              <p class="tech-line">
+                Node.js · NestJS · TypeScript · Auth0 · PostgreSQL · Microsoft
+                Fabric
+              </p>
+            </div>
+          </article>
+          <article class="experience" id="2bcore">
+            <div class="experience-date">
+              <p>
+                <time datetime="2021-07">Jul. 2021</time> —
+                <time datetime="2023-11">Nov. 2023</time>
+              </p>
+              <p>Querétaro · Tiempo completo</p>
+            </div>
+            <div class="experience-body">
+              <p class="company">2BCORE · Proyectos para Soriana</p>
+              <h3>Backend Developer / Data Engineer</h3>
+              <ul>
+                <li>
+                  Desarrollo de APIs y servicios con Node.js/Express y MongoDB,
+                  integración con aplicaciones empresariales y colaboración con
+                  equipos de frontend Angular.
+                </li>
+                <li>
+                  Diseño, automatización y monitoreo de pipelines ETL en Google
+                  Cloud con BigQuery, Cloud Composer/Airflow, Data Fusion y
+                  Dataprep.
+                </li>
+                <li>
+                  Implementación de servicios y procesos de datos con Python y
+                  Node.js sobre Cloud Run y Cloud Functions, incorporando
+                  validaciones y transformaciones.
+                </li>
+                <li>
+                  Modelado, normalización y calidad de datos de fuentes
+                  operativas y CRM, incluyendo la evolución de una Customer Data
+                  Platform (CDP).
+                </li>
+              </ul>
+              <details>
+                <summary>Ver detalle de backend, análisis y cloud</summary>
+                <div class="detail-content">
+                  <h4>Desarrollo e integración</h4>
+                  <ul>
+                    <li>
+                      Planificación, pruebas y liberación de endpoints para
+                      sistemas de gestión e integraciones con SAP, Jira y
+                      Confluence; documentación con Postman, Swagger y ApiDoc.
+                    </li>
+                    <li>
+                      Integración de pagos y consultas avanzadas en MongoDB;
+                      colaboración en aplicaciones Angular y arquitecturas de
+                      capas y cliente-servidor.
+                    </li>
+                  </ul>
+                  <h4>Análisis e ingeniería de datos</h4>
+                  <ul>
+                    <li>
+                      Extracción de información de usuarios y transacciones
+                      desde bases de datos, Analytics, Salesforce y otras
+                      fuentes CRM; limpieza, exploración y normalización.
+                    </li>
+                    <li>
+                      Optimización de SQL, procedimientos, funciones y datasets
+                      en SQL Server y BigQuery; automatización de procesos y
+                      reportes en Looker, Looker Studio, Power BI y Excel.
+                    </li>
+                    <li>
+                      Gestión y optimización de almacenes, modelado de datos y
+                      seguimiento de integridad y calidad.
+                    </li>
+                    <li>
+                      Participación en implementación y entrenamiento de modelos
+                      con AutoML.
+                    </li>
+                    <li>
+                      Documentación de integraciones, flujos, esquemas y reglas
+                      de transformación; pruebas técnicas y acompañamiento a
+                      usuarios y equipos.
+                    </li>
+                  </ul>
+                  <p>
+                    <strong>Entorno adicional:</strong> Cloud SQL, Cloud
+                    Storage, IAM, Cloud Logging, App Engine, Compute Engine,
+                    Azure DevOps y Data Factory.
+                  </p>
+                </div>
+              </details>
+              <p class="tech-line">
+                Node.js · Python · MongoDB · BigQuery · Airflow · Google Cloud
+              </p>
+            </div>
+          </article>
+          <article class="experience" id="getit">
+            <div class="experience-date">
+              <p>
+                <time datetime="2020-09">Sep. 2020</time> —
+                <time datetime="2021-07">Jul. 2021</time>
+              </p>
+              <p>Querétaro</p>
+            </div>
+            <div class="experience-body">
+              <p class="company">GETIT Company</p>
+              <h3>Backend Developer</h3>
+              <ul>
+                <li>
+                  Desarrollo y mantenimiento de APIs, módulos web e indicadores
+                  para sistemas de información de autopistas con PHP/Laravel,
+                  JavaScript y MySQL.
+                </li>
+                <li>
+                  Optimización de consultas y procedimientos en MySQL/SQL
+                  Server, integración de fuentes, generación de reportes y
+                  resolución de incidencias.
+                </li>
+              </ul>
+              <details>
+                <summary>Ver más contribuciones</summary>
+                <div class="detail-content">
+                  <ul>
+                    <li>
+                      Personalización de un sistema CORE para empresas del
+                      sector de autopistas y carreteras.
+                    </li>
+                    <li>
+                      Recopilación de requerimientos, implementación y
+                      despliegue de desarrollos a medida; diseño y maquetación
+                      de páginas web.
+                    </li>
+                    <li>
+                      Optimización, monitoreo y mantenimiento de servidores web.
+                    </li>
+                    <li>
+                      Participación en la adopción de Scrum y procesos de
+                      integración y despliegue continuos.
+                    </li>
+                  </ul>
+                  <p>
+                    <strong>Entorno:</strong> PHP, Laravel, JavaScript, SQL,
+                    MySQL, SQL Server, PostgreSQL, Angular, jQuery, HTML/CSS,
+                    GitHub, Bitbucket, Jira y Trello.
+                  </p>
+                </div>
+              </details>
+              <p class="tech-line">
+                PHP · Laravel · JavaScript · MySQL · SQL Server
+              </p>
+            </div>
+          </article>
+          <article class="experience" id="independiente">
+            <div class="experience-date">
+              <p>
+                <time datetime="2020-01">Ene. 2020</time> —
+                <time datetime="2023-12">Dic. 2023</time>
+              </p>
+              <p>Proyectos independientes</p>
+            </div>
+            <div class="experience-body">
+              <p class="company">Freelancer</p>
+              <h3>Desarrollador de Software</h3>
+              <p>
+                Colaboraciones por proyecto, algunas en paralelo con otros
+                puestos.
+              </p>
+              <ul>
+                <li>
+                  Desarrollo de APIs y módulos para plataformas de movilidad,
+                  CRM, indicadores y suscripciones con Node.js/AdonisJS y PHP.
+                </li>
+                <li>
+                  Integración de pagos con OpenPay y PayPal, diseño de
+                  endpoints, ajustes de bases de datos y mantenimiento
+                  evolutivo.
+                </li>
+              </ul>
+              <details>
+                <summary>Ver proyectos y alcance de participación</summary>
+                <div class="detail-content">
+                  <ul>
+                    <li>
+                      Colaboración en backend, frontend y sistema web de gestión
+                      de una plataforma de movilidad en Veracruz.
+                    </li>
+                    <li>
+                      Desarrollo de módulos backend y frontend de un CRM para
+                      una empresa de venta de celulares en el Estado de México.
+                    </li>
+                    <li>
+                      Nuevos indicadores para sistemas personalizables de
+                      autopistas.
+                    </li>
+                    <li>
+                      Desarrollo y documentación de APIs REST en AdonisJS para
+                      proyectos escolares.
+                    </li>
+                    <li>
+                      Inicio del desarrollo de una plataforma de gestión y
+                      realización de sorteos en línea.
+                    </li>
+                    <li>
+                      Administración y configuración de servicios web,
+                      despliegue de páginas y optimización de recursos de bases
+                      de datos.
+                    </li>
+                  </ul>
+                  <p>
+                    <strong>Entorno:</strong> AdonisJS, Laravel, PHP,
+                    TypeScript, Angular, Ionic, SQL, PostgreSQL, MySQL, SQL
+                    Server, AWS, WHM y GitHub.
+                  </p>
+                </div>
+              </details>
+              <p class="tech-line">AdonisJS · PHP · OpenPay · PayPal · SQL</p>
+            </div>
+          </article>
+          <article class="experience" id="integracion-energia">
+            <div class="experience-date">
+              <p>
+                <time datetime="2020-01">Ene. 2020</time> —
+                <time datetime="2020-09">Sep. 2020</time>
+              </p>
+              <p>Querétaro</p>
+            </div>
+            <div class="experience-body">
+              <p class="company">Integración de Energía</p>
+              <h3>Auxiliar de Sistemas / Desarrollo</h3>
+              <ul>
+                <li>
+                  Desarrollo y despliegue de aplicaciones internas con Laravel,
+                  MySQL y JavaScript, con soporte, mantenimiento y
+                  documentación.
+                </li>
+                <li>
+                  Desarrollo de un sistema de entradas y salidas conectado al
+                  CRM; mejora de procesos y consultas SQL.
+                </li>
+              </ul>
+              <details>
+                <summary>Ver etapas de prácticas y desarrollo</summary>
+                <div class="detail-content">
+                  <h4>Prácticas · Enero a mayo de 2020</h4>
+                  <p>
+                    Lideré el desarrollo de un sistema de gestión y
+                    visualización de proyectos: definición de alcance,
+                    requerimientos, arquitectura de capas con Laravel, pruebas,
+                    despliegue, documentación y capacitación. Coordiné entregas
+                    semanales e introduje control de versiones con GitHub.
+                  </p>
+                  <h4>Auxiliar de sistemas · Junio a septiembre de 2020</h4>
+                  <p>
+                    Soporte remoto y presencial, gestión de cuentas y accesos,
+                    mantenimiento de CRM/ERP y colaboración en planificación de
+                    software y adopción de Scrum.
+                  </p>
+                  <p>
+                    <strong>Entorno:</strong> Laravel, PHP, MySQL, JavaScript,
+                    HTML/CSS, Bootstrap, jQuery, GitHub, AdonisJS e Ionic.
+                  </p>
+                </div>
+              </details>
+              <p class="tech-line">Laravel · MySQL · JavaScript · CRM/ERP</p>
+            </div>
+          </article>
+        </div>
+        <details class="early-career">
+          <summary>Experiencia inicial · Código Facilito y Appcender</summary>
+          <div class="early-grid">
+            <article>
+              <p class="company">Código Facilito</p>
+              <h3>Colaborador de Desarrollo Web</h3>
+              <p class="muted">
+                <time datetime="2019-08">Ago. 2019</time> —
+                <time datetime="2019-09">Sep. 2019</time> · Tuxtla Gutiérrez
+              </p>
+              <p>
+                Colaboración en Facilito Talks, plataforma de eventos y charlas:
+                modelos, migraciones y controladores para la gestión de eventos,
+                configuración de librerías y control de versiones.
+              </p>
+              <p class="tech-line">Ruby on Rails · SQL Server · GitHub</p>
+            </article>
+            <article>
+              <p class="company">Appcender</p>
+              <h3>Desarrollador de Software · Prácticas</h3>
+              <p class="muted">
+                <time datetime="2017-08">Ago. 2017</time> —
+                <time datetime="2017-09">Sep. 2017</time> · Tuxtla Gutiérrez
+              </p>
+              <p>
+                Maquetación de una plataforma de cursos, cuestionarios
+                interactivos, almacenamiento y extracción de sus datos e
+                integración con el sistema web.
+              </p>
+              <p class="tech-line">HTML · Bootstrap · SQL Server · GitHub</p>
+            </article>
+          </div>
+        </details>
+      </section>
 
-	<!-- Favicons -->
-	<link href="assets/img/favicon.png" rel="icon">
-	<link href="assets/img/favicon.png" rel="apple-touch-icon">
+      <section class="section" id="projects" aria-labelledby="projects-title">
+        <div class="section-heading">
+          <p class="eyebrow">Proyectos seleccionados</p>
+          <h2 id="projects-title">Del problema a la implementación.</h2>
+          <p>
+            Ámbitos de trabajo basados en mi experiencia profesional, con el
+            alcance de mi participación.
+          </p>
+        </div>
+        <div class="project-grid">
+          <article class="project-card">
+            <p class="project-context">HOSTECH · Integraciones</p>
+            <h3>Conectar plataformas empresariales</h3>
+            <dl>
+              <div>
+                <dt>El problema</dt>
+                <dd>
+                  Intercambiar información entre proveedores, plataformas de
+                  reservaciones y sistemas empresariales con reglas y permisos
+                  distintos.
+                </dd>
+              </div>
+              <div>
+                <dt>Mi participación</dt>
+                <dd>
+                  Desarrollo de servicios y orquestadores, sincronizaciones
+                  incrementales y por lotes, validación de datos y autorización
+                  con Auth0 y RBAC.
+                </dd>
+              </div>
+              <div>
+                <dt>Trabajo realizado</dt>
+                <dd>
+                  APIs y procesos de integración para agencias, agentes,
+                  clientes y reservas, con tratamiento de registros
+                  inconsistentes.
+                </dd>
+              </div>
+            </dl>
+            <p class="tech-line">NestJS · TypeScript · Auth0 · SQL</p>
+            <a class="text-link" href="#actual"
+              >Ver experiencia relacionada ↗</a
+            >
+          </article>
+          <article class="project-card">
+            <p class="project-context">2BCORE / Soriana · Datos</p>
+            <h3>Integrar y preparar información</h3>
+            <dl>
+              <div>
+                <dt>El problema</dt>
+                <dd>
+                  Reunir fuentes operativas y CRM, normalizar estructuras y
+                  mantener datos útiles para análisis y operación.
+                </dd>
+              </div>
+              <div>
+                <dt>Mi participación</dt>
+                <dd>
+                  Desarrollo de pipelines ETL, servicios de transformación y
+                  validación, modelado de datos y evolución de una CDP.
+                </dd>
+              </div>
+              <div>
+                <dt>Trabajo realizado</dt>
+                <dd>
+                  Procesos automatizados y monitoreados en Google Cloud,
+                  datasets e indicadores, con documentación de flujos y reglas
+                  de transformación.
+                </dd>
+              </div>
+            </dl>
+            <p class="tech-line">Python · BigQuery · Airflow · Cloud Run</p>
+            <a class="text-link" href="#2bcore"
+              >Ver experiencia relacionada ↗</a
+            >
+          </article>
+          <article class="project-card">
+            <p class="project-context">Independiente · Pagos</p>
+            <h3>Integrar cobros por suscripción</h3>
+            <dl>
+              <div>
+                <dt>El problema</dt>
+                <dd>
+                  Incorporar proveedores de pago a una plataforma web de
+                  suscripciones y adaptar su integración con el sistema.
+                </dd>
+              </div>
+              <div>
+                <dt>Mi participación</dt>
+                <dd>
+                  Colaboración en la integración de OpenPay y PayPal, desarrollo
+                  de endpoints y ajustes de bases de datos.
+                </dd>
+              </div>
+              <div>
+                <dt>Trabajo realizado</dt>
+                <dd>
+                  Módulos de integración y mantenimiento evolutivo dentro del
+                  proyecto de cobros por suscripciones.
+                </dd>
+              </div>
+            </dl>
+            <p class="tech-line">PHP · APIs REST · OpenPay · PayPal</p>
+            <a class="text-link" href="#independiente"
+              >Ver experiencia relacionada ↗</a
+            >
+          </article>
+        </div>
+      </section>
 
-	<!-- Google Fonts -->
-	<link
-		href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
-		rel="stylesheet">
+      <section
+        class="section section-tinted"
+        id="skills"
+        aria-labelledby="skills-title"
+      >
+        <div class="section-heading">
+          <p class="eyebrow">Tecnologías y herramientas</p>
+          <h2 id="skills-title">Conocimientos</h2>
+          <p>
+            Mi especialidad es backend, integraciones y datos. Estas son las
+            tecnologías y herramientas que forman parte de mi trayectoria,
+            incluidas las de proyectos anteriores y experiencia complementaria.
+          </p>
+        </div>
+        <div class="knowledge-catalog">
+          <article class="knowledge-group" aria-labelledby="knowledge-1">
+            <h3 id="knowledge-1">Lenguajes de programación</h3>
+            <ul class="knowledge-list">
+              <li class="knowledge-item">
+                <img
+                  src="assets/img/technologies/php.svg"
+                  alt=""
+                  width="44"
+                  height="44"
+                  loading="lazy"
+                  decoding="async"
+                /><span>PHP</span>
+              </li>
+              <li class="knowledge-item">
+                <img
+                  src="assets/img/technologies/typescript.svg"
+                  alt=""
+                  width="44"
+                  height="44"
+                  loading="lazy"
+                  decoding="async"
+                /><span>TypeScript</span>
+              </li>
+              <li class="knowledge-item">
+                <img
+                  src="assets/img/technologies/javascript.svg"
+                  alt=""
+                  width="44"
+                  height="44"
+                  loading="lazy"
+                  decoding="async"
+                /><span>JavaScript</span>
+              </li>
+              <li class="knowledge-item">
+                <img
+                  src="assets/img/technologies/python.svg"
+                  alt=""
+                  width="44"
+                  height="44"
+                  loading="lazy"
+                  decoding="async"
+                /><span>Python</span>
+              </li>
+              <li class="knowledge-item">
+                <img
+                  src="assets/img/technologies/ruby.svg"
+                  alt=""
+                  width="44"
+                  height="44"
+                  loading="lazy"
+                  decoding="async"
+                /><span>Ruby</span>
+              </li>
+              <li class="knowledge-item">
+                <img
+                  src="assets/img/technologies/java.svg"
+                  alt=""
+                  width="44"
+                  height="44"
+                  loading="lazy"
+                  decoding="async"
+                /><span>Java</span>
+              </li>
+              <li class="knowledge-item">
+                <img
+                  src="assets/img/technologies/cplusplus.svg"
+                  alt=""
+                  width="44"
+                  height="44"
+                  loading="lazy"
+                  decoding="async"
+                /><span>C++</span>
+              </li>
+            </ul>
+          </article>
+          <article class="knowledge-group" aria-labelledby="knowledge-2">
+            <h3 id="knowledge-2">Backend: runtimes y frameworks</h3>
+            <ul class="knowledge-list">
+              <li class="knowledge-item">
+                <img
+                  src="assets/img/technologies/laravel.svg"
+                  alt=""
+                  width="44"
+                  height="44"
+                  loading="lazy"
+                  decoding="async"
+                /><span>Laravel</span>
+              </li>
+              <li class="knowledge-item">
+                <img
+                  src="assets/img/technologies/nodejs.svg"
+                  alt=""
+                  width="44"
+                  height="44"
+                  loading="lazy"
+                  decoding="async"
+                /><span>Node.js</span>
+              </li>
+              <li class="knowledge-item">
+                <img
+                  src="assets/img/technologies/adonisjs.svg"
+                  alt=""
+                  width="44"
+                  height="44"
+                  loading="lazy"
+                  decoding="async"
+                /><span>AdonisJS</span>
+              </li>
+              <li class="knowledge-item">
+                <img
+                  src="assets/img/technologies/express.svg"
+                  alt=""
+                  width="44"
+                  height="44"
+                  loading="lazy"
+                  decoding="async"
+                /><span>Express</span>
+              </li>
+              <li class="knowledge-item">
+                <img
+                  src="assets/img/technologies/nestjs.svg"
+                  alt=""
+                  width="44"
+                  height="44"
+                  loading="lazy"
+                  decoding="async"
+                /><span>NestJS</span>
+              </li>
+              <li class="knowledge-item">
+                <img
+                  src="assets/img/technologies/django.svg"
+                  alt=""
+                  width="44"
+                  height="44"
+                  loading="lazy"
+                  decoding="async"
+                /><span>Django</span>
+              </li>
+              <li class="knowledge-item">
+                <img
+                  src="assets/img/technologies/djangorest.svg"
+                  alt=""
+                  width="44"
+                  height="44"
+                  loading="lazy"
+                  decoding="async"
+                /><span>Django REST</span>
+              </li>
+              <li class="knowledge-item">
+                <img
+                  src="assets/img/technologies/rails.svg"
+                  alt=""
+                  width="44"
+                  height="44"
+                  loading="lazy"
+                  decoding="async"
+                /><span>Ruby on Rails</span>
+              </li>
+              <li class="knowledge-item">
+                <img
+                  src="assets/img/technologies/spring.svg"
+                  alt=""
+                  width="44"
+                  height="44"
+                  loading="lazy"
+                  decoding="async"
+                /><span>Spring Boot</span>
+              </li>
+            </ul>
+          </article>
+          <article class="knowledge-group" aria-labelledby="knowledge-3">
+            <h3 id="knowledge-3">Frontend y desarrollo web</h3>
+            <ul class="knowledge-list">
+              <li class="knowledge-item">
+                <img
+                  src="assets/img/technologies/angularjs.svg"
+                  alt=""
+                  width="44"
+                  height="44"
+                  loading="lazy"
+                  decoding="async"
+                /><span>Angular</span>
+              </li>
+              <li class="knowledge-item">
+                <img
+                  src="assets/img/technologies/vuejs.svg"
+                  alt=""
+                  width="44"
+                  height="44"
+                  loading="lazy"
+                  decoding="async"
+                /><span>Vue.js</span>
+              </li>
+              <li class="knowledge-item">
+                <img
+                  src="assets/img/technologies/nuxtjs.svg"
+                  alt=""
+                  width="44"
+                  height="44"
+                  loading="lazy"
+                  decoding="async"
+                /><span>Nuxt</span>
+              </li>
+              <li class="knowledge-item">
+                <img
+                  src="assets/img/technologies/ionic.svg"
+                  alt=""
+                  width="44"
+                  height="44"
+                  loading="lazy"
+                  decoding="async"
+                /><span>Ionic</span>
+              </li>
+              <li class="knowledge-item">
+                <img
+                  src="assets/img/technologies/jquery.svg"
+                  alt=""
+                  width="44"
+                  height="44"
+                  loading="lazy"
+                  decoding="async"
+                /><span>jQuery</span>
+              </li>
+              <li class="knowledge-item">
+                <img
+                  src="assets/img/technologies/bootstrap.svg"
+                  alt=""
+                  width="44"
+                  height="44"
+                  loading="lazy"
+                  decoding="async"
+                /><span>Bootstrap</span>
+              </li>
+              <li class="knowledge-item">
+                <img
+                  src="assets/img/technologies/css3.svg"
+                  alt=""
+                  width="44"
+                  height="44"
+                  loading="lazy"
+                  decoding="async"
+                /><span>CSS3</span>
+              </li>
+              <li class="knowledge-item">
+                <img
+                  src="assets/img/technologies/html5.svg"
+                  alt=""
+                  width="44"
+                  height="44"
+                  loading="lazy"
+                  decoding="async"
+                /><span>HTML5</span>
+              </li>
+              <li class="knowledge-item">
+                <img
+                  src="assets/img/technologies/tailwindcss.svg"
+                  alt=""
+                  width="44"
+                  height="44"
+                  loading="lazy"
+                  decoding="async"
+                /><span>Tailwind CSS</span>
+              </li>
+            </ul>
+          </article>
+          <article class="knowledge-group" aria-labelledby="knowledge-4">
+            <h3 id="knowledge-4">Bases de datos</h3>
+            <ul class="knowledge-list">
+              <li class="knowledge-item">
+                <img
+                  src="assets/img/technologies/mysql.svg"
+                  alt=""
+                  width="44"
+                  height="44"
+                  loading="lazy"
+                  decoding="async"
+                /><span>MySQL</span>
+              </li>
+              <li class="knowledge-item">
+                <img
+                  src="assets/img/technologies/mariadb.svg"
+                  alt=""
+                  width="44"
+                  height="44"
+                  loading="lazy"
+                  decoding="async"
+                /><span>MariaDB</span>
+              </li>
+              <li class="knowledge-item">
+                <img
+                  src="assets/img/technologies/microsoftsqlserver.svg"
+                  alt=""
+                  width="44"
+                  height="44"
+                  loading="lazy"
+                  decoding="async"
+                /><span>SQL Server</span>
+              </li>
+              <li class="knowledge-item">
+                <img
+                  src="assets/img/technologies/mongodb.svg"
+                  alt=""
+                  width="44"
+                  height="44"
+                  loading="lazy"
+                  decoding="async"
+                /><span>MongoDB</span>
+              </li>
+              <li class="knowledge-item">
+                <img
+                  src="assets/img/technologies/postgresql.svg"
+                  alt=""
+                  width="44"
+                  height="44"
+                  loading="lazy"
+                  decoding="async"
+                /><span>PostgreSQL</span>
+              </li>
+              <li class="knowledge-item">
+                <img
+                  src="assets/img/technologies/redis.svg"
+                  alt=""
+                  width="44"
+                  height="44"
+                  loading="lazy"
+                  decoding="async"
+                /><span>Redis</span>
+              </li>
+              <li class="knowledge-item">
+                <img
+                  src="assets/img/technologies/sqlite.svg"
+                  alt=""
+                  width="44"
+                  height="44"
+                  loading="lazy"
+                  decoding="async"
+                /><span>SQLite</span>
+              </li>
+              <li class="knowledge-item">
+                <img
+                  src="assets/img/technologies/firebase.svg"
+                  alt=""
+                  width="44"
+                  height="44"
+                  loading="lazy"
+                  decoding="async"
+                /><span>Firebase</span>
+              </li>
+            </ul>
+          </article>
+          <article class="knowledge-group" aria-labelledby="knowledge-5">
+            <h3 id="knowledge-5">DevOps y automatización</h3>
+            <ul class="knowledge-list">
+              <li class="knowledge-item">
+                <img
+                  src="assets/img/technologies/docker.svg"
+                  alt=""
+                  width="44"
+                  height="44"
+                  loading="lazy"
+                  decoding="async"
+                /><span>Docker</span>
+              </li>
+              <li class="knowledge-item">
+                <img
+                  src="assets/img/technologies/kubernetes.svg"
+                  alt=""
+                  width="44"
+                  height="44"
+                  loading="lazy"
+                  decoding="async"
+                /><span>Kubernetes</span>
+              </li>
+              <li class="knowledge-item">
+                <img
+                  src="assets/img/technologies/jenkins.svg"
+                  alt=""
+                  width="44"
+                  height="44"
+                  loading="lazy"
+                  decoding="async"
+                /><span>Jenkins</span>
+              </li>
+              <li class="knowledge-item">
+                <img
+                  src="assets/img/technologies/azuredevops.svg"
+                  alt=""
+                  width="44"
+                  height="44"
+                  loading="lazy"
+                  decoding="async"
+                /><span>Azure DevOps</span>
+              </li>
+              <li class="knowledge-item">
+                <span class="knowledge-monogram" aria-hidden="true">PM2</span
+                ><span>PM2</span>
+              </li>
+            </ul>
+          </article>
+          <article class="knowledge-group" aria-labelledby="knowledge-6">
+            <h3 id="knowledge-6">Control de versiones</h3>
+            <ul class="knowledge-list">
+              <li class="knowledge-item">
+                <img
+                  src="assets/img/technologies/git.svg"
+                  alt=""
+                  width="44"
+                  height="44"
+                  loading="lazy"
+                  decoding="async"
+                /><span>Git</span>
+              </li>
+              <li class="knowledge-item">
+                <img
+                  src="assets/img/technologies/github.svg"
+                  alt=""
+                  width="44"
+                  height="44"
+                  loading="lazy"
+                  decoding="async"
+                /><span>GitHub</span>
+              </li>
+              <li class="knowledge-item">
+                <img
+                  src="assets/img/technologies/gitlab.svg"
+                  alt=""
+                  width="44"
+                  height="44"
+                  loading="lazy"
+                  decoding="async"
+                /><span>GitLab</span>
+              </li>
+              <li class="knowledge-item">
+                <img
+                  src="assets/img/technologies/bitbucket.svg"
+                  alt=""
+                  width="44"
+                  height="44"
+                  loading="lazy"
+                  decoding="async"
+                /><span>Bitbucket</span>
+              </li>
+            </ul>
+          </article>
+          <article class="knowledge-group" aria-labelledby="knowledge-7">
+            <h3 id="knowledge-7">Herramientas de trabajo</h3>
+            <ul class="knowledge-list">
+              <li class="knowledge-item">
+                <img
+                  src="assets/img/technologies/jira.svg"
+                  alt=""
+                  width="44"
+                  height="44"
+                  loading="lazy"
+                  decoding="async"
+                /><span>Jira</span>
+              </li>
+              <li class="knowledge-item">
+                <img
+                  src="assets/img/technologies/phpstorm.svg"
+                  alt=""
+                  width="44"
+                  height="44"
+                  loading="lazy"
+                  decoding="async"
+                /><span>PhpStorm</span>
+              </li>
+              <li class="knowledge-item">
+                <img
+                  src="assets/img/technologies/vscode.svg"
+                  alt=""
+                  width="44"
+                  height="44"
+                  loading="lazy"
+                  decoding="async"
+                /><span>Visual Studio Code</span>
+              </li>
+              <li class="knowledge-item">
+                <img
+                  src="assets/img/technologies/slack.svg"
+                  alt=""
+                  width="44"
+                  height="44"
+                  loading="lazy"
+                  decoding="async"
+                /><span>Slack</span>
+              </li>
+              <li class="knowledge-item">
+                <img
+                  src="assets/img/technologies/trello.svg"
+                  alt=""
+                  width="44"
+                  height="44"
+                  loading="lazy"
+                  decoding="async"
+                /><span>Trello</span>
+              </li>
+            </ul>
+          </article>
+          <article class="knowledge-group" aria-labelledby="knowledge-8">
+            <h3 id="knowledge-8">Documentación de APIs y seguridad</h3>
+            <ul class="knowledge-list">
+              <li class="knowledge-item">
+                <img
+                  src="assets/img/technologies/swagger.svg"
+                  alt=""
+                  width="44"
+                  height="44"
+                  loading="lazy"
+                  decoding="async"
+                /><span>Swagger</span>
+              </li>
+              <li class="knowledge-item">
+                <img
+                  src="assets/img/technologies/postman.svg"
+                  alt=""
+                  width="44"
+                  height="44"
+                  loading="lazy"
+                  decoding="async"
+                /><span>Postman</span>
+              </li>
+              <li class="knowledge-item">
+                <img
+                  src="assets/img/technologies/openapi.svg"
+                  alt=""
+                  width="44"
+                  height="44"
+                  loading="lazy"
+                  decoding="async"
+                /><span>OpenAPI</span>
+              </li>
+              <li class="knowledge-item">
+                <span class="knowledge-monogram" aria-hidden="true">A0</span
+                ><span>Auth0</span>
+              </li>
+              <li class="knowledge-item">
+                <span class="knowledge-monogram" aria-hidden="true">JWT</span
+                ><span>JWT</span>
+              </li>
+              <li class="knowledge-item">
+                <span class="knowledge-monogram" aria-hidden="true">RBAC</span
+                ><span>RBAC</span>
+              </li>
+            </ul>
+          </article>
+          <article class="knowledge-group" aria-labelledby="knowledge-9">
+            <h3 id="knowledge-9">Bibliotecas e integración</h3>
+            <ul class="knowledge-list">
+              <li class="knowledge-item">
+                <img
+                  src="assets/img/technologies/axios.svg"
+                  alt=""
+                  width="44"
+                  height="44"
+                  loading="lazy"
+                  decoding="async"
+                /><span>Axios</span>
+              </li>
+              <li class="knowledge-item">
+                <img
+                  src="assets/img/technologies/knexjs.svg"
+                  alt=""
+                  width="44"
+                  height="44"
+                  loading="lazy"
+                  decoding="async"
+                /><span>Knex</span>
+              </li>
+              <li class="knowledge-item">
+                <img
+                  src="assets/img/technologies/sequelize.svg"
+                  alt=""
+                  width="44"
+                  height="44"
+                  loading="lazy"
+                  decoding="async"
+                /><span>Sequelize</span>
+              </li>
+              <li class="knowledge-item">
+                <img
+                  src="assets/img/technologies/socketio.svg"
+                  alt=""
+                  width="44"
+                  height="44"
+                  loading="lazy"
+                  decoding="async"
+                /><span>Socket.IO</span>
+              </li>
+              <li class="knowledge-item">
+                <img
+                  src="assets/img/technologies/npm.svg"
+                  alt=""
+                  width="44"
+                  height="44"
+                  loading="lazy"
+                  decoding="async"
+                /><span>npm</span>
+              </li>
+            </ul>
+          </article>
+          <article class="knowledge-group" aria-labelledby="knowledge-10">
+            <h3 id="knowledge-10">Cloud, servidores y sistemas</h3>
+            <ul class="knowledge-list">
+              <li class="knowledge-item">
+                <img
+                  src="assets/img/technologies/heroku.svg"
+                  alt=""
+                  width="44"
+                  height="44"
+                  loading="lazy"
+                  decoding="async"
+                /><span>Heroku</span>
+              </li>
+              <li class="knowledge-item">
+                <img
+                  src="assets/img/technologies/digitalocean.svg"
+                  alt=""
+                  width="44"
+                  height="44"
+                  loading="lazy"
+                  decoding="async"
+                /><span>DigitalOcean</span>
+              </li>
+              <li class="knowledge-item">
+                <img
+                  src="assets/img/technologies/googlecloud.svg"
+                  alt=""
+                  width="44"
+                  height="44"
+                  loading="lazy"
+                  decoding="async"
+                /><span>Google Cloud</span>
+              </li>
+              <li class="knowledge-item">
+                <img
+                  src="assets/img/technologies/amazonwebservices.svg"
+                  alt=""
+                  width="44"
+                  height="44"
+                  loading="lazy"
+                  decoding="async"
+                /><span>AWS</span>
+              </li>
+              <li class="knowledge-item">
+                <img
+                  src="assets/img/technologies/nginx.svg"
+                  alt=""
+                  width="44"
+                  height="44"
+                  loading="lazy"
+                  decoding="async"
+                /><span>Nginx</span>
+              </li>
+              <li class="knowledge-item">
+                <img
+                  src="assets/img/technologies/apache.svg"
+                  alt=""
+                  width="44"
+                  height="44"
+                  loading="lazy"
+                  decoding="async"
+                /><span>Apache HTTP Server</span>
+              </li>
+              <li class="knowledge-item">
+                <img
+                  src="assets/img/technologies/linux.svg"
+                  alt=""
+                  width="44"
+                  height="44"
+                  loading="lazy"
+                  decoding="async"
+                /><span>Linux</span>
+              </li>
+            </ul>
+          </article>
+          <article class="knowledge-group" aria-labelledby="knowledge-11">
+            <h3 id="knowledge-11">Ingeniería y análisis de datos</h3>
+            <ul class="knowledge-list">
+              <li class="knowledge-item">
+                <img
+                  src="assets/img/technologies/apacheairflow.svg"
+                  alt=""
+                  width="44"
+                  height="44"
+                  loading="lazy"
+                  decoding="async"
+                /><span>Airflow</span>
+              </li>
+              <li class="knowledge-item">
+                <img
+                  src="assets/img/technologies/numpy.svg"
+                  alt=""
+                  width="44"
+                  height="44"
+                  loading="lazy"
+                  decoding="async"
+                /><span>NumPy</span>
+              </li>
+              <li class="knowledge-item">
+                <img
+                  src="assets/img/technologies/pandas.svg"
+                  alt=""
+                  width="44"
+                  height="44"
+                  loading="lazy"
+                  decoding="async"
+                /><span>Pandas</span>
+              </li>
+              <li class="knowledge-item">
+                <img
+                  src="assets/img/technologies/matplotlib.svg"
+                  alt=""
+                  width="44"
+                  height="44"
+                  loading="lazy"
+                  decoding="async"
+                /><span>Matplotlib</span>
+              </li>
+              <li class="knowledge-item">
+                <span class="knowledge-monogram" aria-hidden="true">BQ</span
+                ><span>BigQuery</span>
+              </li>
+              <li class="knowledge-item">
+                <span class="knowledge-monogram" aria-hidden="true">MF</span
+                ><span>Microsoft Fabric</span>
+              </li>
+              <li class="knowledge-item">
+                <span class="knowledge-monogram" aria-hidden="true">DL</span
+                ><span>Delta Lake</span>
+              </li>
+              <li class="knowledge-item">
+                <span class="knowledge-monogram" aria-hidden="true">LK</span
+                ><span>Looker</span>
+              </li>
+              <li class="knowledge-item">
+                <span class="knowledge-monogram" aria-hidden="true">BI</span
+                ><span>Power BI</span>
+              </li>
+            </ul>
+          </article>
+        </div>
+        <p class="knowledge-note">
+          En datos y cloud también trabajo con procesos ETL/ELT, Cloud Run,
+          Cloud Functions, Cloud SQL, Composer y Data Fusion. Para análisis,
+          documentación y revisión asistida de código utilizo Codex y Claude
+          Code. Exploro continuamente nuevos modelos de inteligencia artificial
+          y amplío mis conocimientos en orquestación de agentes.
+        </p>
+      </section>
 
-	<!-- Vendor CSS Files -->
-	<link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-	<link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet">
-	<link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-	<link href="assets/vendor/venobox/venobox.css" rel="stylesheet">
-	<link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
-	<link href="assets/vendor/aos/aos.css" rel="stylesheet">
-
-	<!-- Template Main CSS File -->
-	<link href="assets/css/hover.css" rel="stylesheet">
-	<link href="assets/css/style.css" rel="stylesheet">
-
-	<!-- swiperjs -->
-	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-
-	<!-- skills icons -->
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
-
-	<!-- 
-		* Template Name: iPortfolio - v2.0.3
-		* Template URL: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/
-		* Author: BootstrapMade.com
-		* License: https://bootstrapmade.com/license/
-	-->
-</head>
-
-<!-- oncontextmenu="return false;" -->
-
-<body>
-	<div style="display: none" id="hideAll">
-		<div class="loader">
-			<div>
-				<blockquote class="blockquote text-center">
-					<footer class="blockquote-footer fs-md-3 text-white"><cite title="Source Title">Moisés Escobar
-							Martínez</cite></footer>
-				</blockquote>
-			</div>
-			<!-- 1st spinner -->
-			<div class="flower-spinner">
-				<div class="dots-container">
-					<div class="bigger-dot">
-						<div class="smaller-dot"></div>
-					</div>
-				</div>
-			</div>
-		</div>
-
-	</div>
-
-	<!-- Messenger Chat Plugin Code -->
-	<!-- <div id="fb-root"></div> -->
-	<!-- Your Chat Plugin code -->
-	<!-- <div class="fb-customerchat" attribution="biz_inbox" page_id="" theme_color="#149ddd"></div> -->
-
-	<!-- ======= Mobile nav toggle button ======= -->
-	<button type="button" class="mobile-nav-toggle d-xl-none"><i class="icofont-navigation-menu"></i></button>
-
-	<!-- ======= Header ======= -->
-	<header id="header" class="no-scrollbar">
-		<div class="d-flex flex-column">
-			<div class="profile">
-				<img loading="lazy" src="assets/img/profile.jpg" alt="" class="img-fluid rounded-circle">
-				<h1 class="text-light"><a href="index.html">Moisés Escobar Mtz</a></h1>
-				<div class="social-links mt-3 text-center">
-					<a href="https://github.com/moisesEscobar" target="_blank" class="github"><i
-							class='bx bxl-github'></i></a>
-					<a href="https://www.linkedin.com/in/moises-escobar-martinez" target="_blank" class="linkedin">
-						<i class="bx bxl-linkedin"></i>
-					</a>
-					<a href="https://www.facebook.com/MoisesEscobarMtz" target="_blank" class="facebook"><i
-							class="bx bxl-facebook"></i></a>
-					<!-- <a href="https://twitter.com/" target="_blank" class="twitter"><i class="bx bxl-twitter"></i></a> -->
-				</div>
-			</div>
-			<nav id="nav-menu" class="nav-menu">
-				<ul>
-					<li><a href="#skills"><i class="icofont-unique-idea"></i> <span>Conocimientos</span></a></li>
-					<li><a href="#about"><i class="bx bx-user"></i> <span>Sobre Mi</span></a></li>
-					<li><a href="#resume"><i class="bx bx-file-blank"></i> <span>Resumen</span></a></li>
-					<li><a href="#contact"><i class="bx bx-envelope"></i> Contacto</a></li>
-				</ul>
-			</nav><!-- .nav-menu -->
-			<button type="button" class="mobile-nav-toggle d-xl-none"><i class="icofont-navigation-menu"></i></button>
-		</div>
-	</header><!-- End Header -->
-
-	<main id="main">
-		<!-- ======= Skills Section ======= -->
-		<section id="skills" class="skills section-bg">
-			<div class="container">
-
-				<div class="section-title">
-					<h2>Conocimientos</h2>
-				</div>
-				<div class="container mb-4" data-aos="fade-up">
-					<div class="fw-bold fs-4 my-2">Lenguajes de programación:</div>
-					<div class="row">
-						<div class="col-4 col-md-2 col-lg-1">
-							<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" />
-							<p class="fw-bold p-0 text-center" style="font-size: 14px;">Php</p>
-						</div>
-						<div class="col-4 col-md-2 col-lg-1">
-							<img
-								src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" />
-							<p class="fw-bold p-0 text-center" style="font-size: 14px;">TypeScript</p>
-						</div>
-						<div class="col-4 col-md-2 col-lg-1">
-							<img
-								src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" />
-							<p class="fw-bold p-0 text-center" style="font-size: 14px;">JavaScript</p>
-						</div>
-						<div class="col-4 col-md-2 col-lg-1">
-							<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" />
-							<p class="fw-bold p-0 text-center" style="font-size: 14px;">Python</p>
-						</div>
-						<div class="col-4 col-md-2 col-lg-1">
-							<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/ruby/ruby-original.svg" />
-							<p class="fw-bold p-0 text-center" style="font-size: 14px;">Ruby</p>
-						</div>
-						<div class="col-4 col-md-2 col-lg-1">
-							<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" />
-							<p class="fw-bold p-0 text-center" style="font-size: 14px;">Java</p>
-						</div>
-						<div class="col-4 col-md-2 col-lg-1">
-							<img
-								src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" />
-							<p class="fw-bold p-0 text-center" style="font-size: 14px;">C++</p>
-						</div>
-					</div>
-				</div>
-
-				<div class="container mb-4" data-aos="fade-up">
-					<div class="fw-bold fs-4 my-2">BackEnd Frameworks:</div>
-					<div class="row">
-						<div class="col-4 col-md-2 col-lg-1">
-							<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/laravel/laravel-original.svg" />
-							<p class="fw-bold p-0 text-center" style="font-size: 14px;">Laravel</p>
-						</div>
-						<div class="col-4 col-md-2 col-lg-1">
-							<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" />
-							<p class="fw-bold p-0 text-center" style="font-size: 14px;">Node.js</p>
-						</div>
-						<div class="col-4 col-md-2 col-lg-1">
-							<img
-								src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/adonisjs/adonisjs-original.svg" />
-							<p class="fw-bold p-0 text-center" style="font-size: 14px;">Adonis.js</p>
-						</div>
-						<div class="col-4 col-md-2 col-lg-1">
-							<img
-								src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" />
-							<p class="fw-bold p-0 text-center" style="font-size: 14px;">Express.js</p>
-						</div>
-						<div class="col-4 col-md-2 col-lg-1">
-							<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nestjs/nestjs-original.svg" />
-							<p class="fw-bold p-0 text-center" style="font-size: 14px;">Nest.js</p>
-						</div>
-						<div class="col-4 col-md-2 col-lg-1">
-							<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/knexjs/knexjs-original.svg" />
-							<p class="fw-bold p-0 text-center" style="font-size: 14px;">Knex.js</p>
-						</div>
-						<div class="col-4 col-md-2 col-lg-1">
-							<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg" />
-							<p class="fw-bold p-0 text-center" style="font-size: 14px;">Django</p>
-						</div>
-						<div class="col-4 col-md-2 col-lg-1">
-							<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/djangorest/djangorest-original.svg" />
-							<p class="fw-bold p-0 text-center" style="font-size: 14px;">Django Rest</p>
-						</div>
-						<div class="col-4 col-md-2 col-lg-1">
-							<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/ruby/ruby-original.svg" />
-							<p class="fw-bold p-0 text-center" style="font-size: 14px;">Ruby on Rails</p>
-						</div>
-						<div class="col-4 col-md-2 col-lg-1">
-							<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/axios/axios-plain.svg" />
-							<p class="fw-bold p-0 text-center" style="font-size: 14px;">Axios</p>
-						</div>
-						<div class="col-4 col-md-2 col-lg-1">
-							<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/spring/spring-original.svg" />
-							<p class="fw-bold p-0 text-center" style="font-size: 14px;">Spring Boot</p>
-						</div>
-					</div>
-				</div>
-
-
-				<div class="container mb-4" data-aos="fade-up">
-					<div class="fw-bold fs-4 my-2">FrontEnd Frameworks:</div>
-					<div class="row">
-						<div class="col-4 col-md-2 col-lg-1">
-
-							<img
-								src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-original.svg" />
-							<p class="fw-bold p-0 text-center" style="font-size: 14px;">Angular</p>
-						</div>
-						<div class="col-4 col-md-2 col-lg-1">
-							<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg" />
-							<p class="fw-bold p-0 text-center" style="font-size: 14px;">Vue.js</p>
-						</div>
-						<div class="col-4 col-md-2 col-lg-1">
-							<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nuxtjs/nuxtjs-original.svg" />
-							<p class="fw-bold p-0 text-center" style="font-size: 14px;">Nuxt.js</p>
-						</div>
-						<div class="col-4 col-md-2 col-lg-1">
-							<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/ionic/ionic-original.svg" />
-							<p class="fw-bold p-0 text-center" style="font-size: 14px;">Ionic</p>
-						</div>
-						<div class="col-4 col-md-2 col-lg-1">
-							<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jquery/jquery-original.svg" />
-							<p class="fw-bold p-0 text-center" style="font-size: 14px;">jQuery</p>
-						</div>
-						<div class="col-4 col-md-2 col-lg-1">
-							<img
-								src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" />
-							<p class="fw-bold p-0 text-center" style="font-size: 14px;">Bootstrap</p>
-						</div>
-						<div class="col-4 col-md-2 col-lg-1">
-							<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" />
-							<p class="fw-bold p-0 text-center" style="font-size: 14px;">CSS3</p>
-						</div>
-						<div class="col-4 col-md-2 col-lg-1">
-							<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" />
-							<p class="fw-bold p-0 text-center" style="font-size: 14px;">HTML5</p>
-						</div>
-						<div class="col-4 col-md-2 col-lg-1">
-							<img
-								src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original-wordmark.svg" />
-							<p class="fw-bold p-0 text-center" style="font-size: 14px;">Tailwind CSS</p>
-						</div>
-					</div>
-				</div>
-
-
-				<div class="container mb-4" data-aos="fade-up">
-					<div class="fw-bold fs-4 my-2">Bases De Datos:</div>
-					<div class="row">
-						<div class="col-4 col-md-2 col-lg-1">
-							<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" />
-							<p class="fw-bold p-0 text-center" style="font-size: 14px;">MySQL</p>
-						</div>
-						<div class="col-4 col-md-2 col-lg-1">
-							<img
-								src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/microsoftsqlserver/microsoftsqlserver-plain.svg" />
-							<p class="fw-bold p-0 text-center" style="font-size: 14px;">Microsoft SQLServer</p>
-						</div>
-						<div class="col-4 col-md-2 col-lg-1">
-							<img
-								src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" />
-							<p class="fw-bold p-0 text-center" style="font-size: 14px;">MongoDB</p>
-						</div>
-						<div class="col-4 col-md-2 col-lg-1">
-							<img
-								src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" />
-							<p class="fw-bold p-0 text-center" style="font-size: 14px;">PostGres SQL</p>
-						</div>
-						<div class="col-4 col-md-2 col-lg-1">
-							<img
-								src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redis/redis-original.svg" />
-							<p class="fw-bold p-0 text-center" style="font-size: 14px;">+Redis</p>
-						</div>
-						<div class="col-4 col-md-2 col-lg-1">
-							<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sqlite/sqlite-original.svg" />
-							<p class="fw-bold p-0 text-center" style="font-size: 14px;">SQLite</p>
-						</div>
-						<div class="col-4 col-md-2 col-lg-1">
-							<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg" />
-							<p class="fw-bold p-0 text-center" style="font-size: 14px;">Firebase</p>
-						</div>
-						<!-- Bigquery/Sql -->
-					</div>
-				</div>
-
-				<!-- <div class="container mb-4" data-aos="fade-up">
-					<div class="fw-bold fs-4 my-2">Gestion Microservices:</div>
-					<div class="row">
-
-						<div class="col-4 col-md-2 col-lg-1">
-							<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redis/redis-plain.svg" />
-							<p class="fw-bold p-0 text-center" style="font-size: 14px;">Docker</p>
-						</div>
-					</div>
-				</div> -->
-
-				<div class="container mb-4" data-aos="fade-up">
-					<div class="fw-bold fs-4 my-2">Herramientas En Entornos DevOps:</div>
-					<div class="row">
-						<div class="col-4 col-md-2 col-lg-1">
-							<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" />
-							<p class="fw-bold p-0 text-center" style="font-size: 14px;">Git</p>
-							<!-- (Github/GitLab/Bitbucket) -->
-						</div>
-
-						<div class="col-4 col-md-2 col-lg-1">
-							<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" />
-							<p class="fw-bold p-0 text-center" style="font-size: 14px;">Docker</p>
-						</div>
-						<div class="col-5 col-md-2 col-lg-1">
-							<img
-								src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kubernetes/kubernetes-plain.svg" />
-							<p class="fw-bold p-0 text-center" style="font-size: 13px;">Kubernetes</p>
-						</div>
-						<div class="col-4 col-md-2 col-lg-1">
-							<img
-								src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jenkins/jenkins-original.svg" />
-							<p class="fw-bold p-0 text-center" style="font-size: 14px;">Jenkins</p>
-						</div>
-						<!-- Nginx/ Linux / Ubuntu-->
-					</div>
-				</div>
-				<div class="container mb-4" data-aos="fade-up">
-					<div class="fw-bold fs-4 my-2">Herramientas de control de versiones:</div>
-					<div class="row">
-						<div class="col-4 col-md-2 col-lg-1">
-							<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" />
-							<p class="fw-bold p-0 text-center" style="font-size: 14px;">Git</p>
-						</div>
-						<div class="col-4 col-md-2 col-lg-1">
-							<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" />
-							<p class="fw-bold p-0 text-center" style="font-size: 14px;">GitHub</p>
-						</div>
-						<div class="col-4 col-md-2 col-lg-1">
-							<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/gitlab/gitlab-original.svg" />
-							<p class="fw-bold p-0 text-center" style="font-size: 14px;">GitLab</p>
-						</div>
-						<div class="col-4 col-md-2 col-lg-1">
-							<img
-								src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bitbucket/bitbucket-original.svg" />
-							<p class="fw-bold p-0 text-center" style="font-size: 14px;">BitBuckect</p>
-						</div>
-					</div>
-				</div>
-				<div class="container mb-4" data-aos="fade-up">
-					<div class="fw-bold fs-4 my-2">Herramientas:</div>
-					<div class="row">
-						<div class="col-4 col-md-2 col-lg-1">
-							<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jira/jira-original.svg" />
-							<p class="fw-bold p-0 text-center" style="font-size: 14px;">Jira Software</p>
-						</div>
-						<div class="col-4 col-md-2 col-lg-1">
-							<img
-								src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/phpstorm/phpstorm-original.svg" />
-							<p class="fw-bold p-0 text-center" style="font-size: 14px;">Php Storm</p>
-						</div>
-						<div class="col-4 col-md-2 col-lg-1">
-							<img
-								src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/visualstudio/visualstudio-plain.svg" />
-							<p class="fw-bold p-0 text-center" style="font-size: 14px;">Visual Studio Code</p>
-						</div>
-						<div class="col-4 col-md-2 col-lg-1">
-							<img
-								src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/slack/slack-original.svg" />
-							<p class="fw-bold p-0 text-center" style="font-size: 14px;">Slack</p>
-						</div>
-						<div class="col-4 col-md-2 col-lg-1">
-							<img
-								src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/trello/trello-original.svg" />
-							<p class="fw-bold p-0 text-center" style="font-size: 14px;">Trello</p>
-						</div>
-						<!-- jquery,json, sentry,
-						 typescript,
-						 vercel,digitalocean,
-						-->
-					</div>
-				</div>
-				<div class="container mb-4" data-aos="fade-up">
-					<div class="fw-bold fs-4 my-2">Documentación de APIS:</div>
-					<div class="row">
-						<div class="col-4 col-md-2 col-lg-1">
-							<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/swagger/swagger-original.svg" />
-							<p class="fw-bold p-0 text-center" style="font-size: 14px;">Swagger</p>
-						</div>
-						<div class="col-4 col-md-2 col-lg-1">
-							<img
-								src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postman/postman-original.svg" />
-							<p class="fw-bold p-0 text-center" style="font-size: 14px;">Postman</p>
-						</div>
-						<div class="col-4 col-md-2 col-lg-1">
-							<img
-								src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/openapi/openapi-original.svg" />
-							<p class="fw-bold p-0 text-center" style="font-size: 14px;">Openapi</p>
-						</div>
-					</div>
-				</div>
-				<!-- <div class="container mb-4" data-aos="fade-up">
-					<div class="fw-bold fs-4 my-2">Herramientas de Google Cloud:</div>
-					<div class="row">
-						<div class="col-4 col-md-2 col-lg-1">
-							<img
-								src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/googlecloud/googlecloud-original.svg" />
-							<p class="fw-bold p-0 text-center" style="font-size: 14px;">Google Cloud</p>
-						</div>
-						<div class="col-4 col-md-2 col-lg-1">
-							<img src="./assets/img/administration.png" width="50px" height="50 px" />
-							<p class="fw-bold p-0 text-center" style="font-size: 14px;">Administración</p>
-						</div>
-					</div>
-				</div> -->
-				<div class="container mb-4" data-aos="fade-up">
-					<div class="fw-bold fs-4 my-2">Otros Conocimientos:</div>
-					<div class="row">
-						<div class="col-4 col-md-2 col-lg-1">
-							<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/heroku/heroku-original.svg" />
-							<p class="fw-bold p-0 text-center" style="font-size: 14px;">Heroku</p>
-						</div>
-						<div class="col-4 col-md-2 col-lg-1">
-							<img
-								src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/digitalocean/digitalocean-original.svg" />
-							<p class="fw-bold p-0 text-center" style="font-size: 14px;">Digital Ocean</p>
-						</div>
-						<div class="col-4 col-md-2 col-lg-1">
-							<img
-								src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/googlecloud/googlecloud-original.svg" />
-							<p class="fw-bold p-0 text-center" style="font-size: 14px;">Google Cloud</p>
-						</div>
-						<div class="col-4 col-md-2 col-lg-1">
-							<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nginx/nginx-original.svg" />
-							<p class="fw-bold p-0 text-center" style="font-size: 14px;">Nginx</p>
-						</div>
-						<div class="col-4 col-md-2 col-lg-1">
-							<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/apache/apache-original.svg" />
-							<p class="fw-bold p-0 text-center" style="font-size: 14px;">Apache HTTP Server</p>
-						</div>
-					</div>
-					<div class="row">
-						<div class="col-4 col-md-2 col-lg-1">
-							<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" />
-							<p class="fw-bold p-0 text-center" style="font-size: 14px;">Linux</p>
-						</div>
-						<div class="col-4 col-md-2 col-lg-1">
-							<img
-								src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/npm/npm-original-wordmark.svg" />
-							<p class="fw-bold p-0 text-center" style="font-size: 14px;">NPM</p>
-						</div>
-						
-						<div class="col-4 col-md-2 col-lg-1">
-							<img
-								src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/socketio/socketio-original.svg" />
-							<p class="fw-bold p-0 text-center" style="font-size: 14px;">SockectIo</p>
-						</div>
-						<div class="col-4 col-md-2 col-lg-1">
-							<img
-								src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sequelize/sequelize-original.svg" />
-							<p class="fw-bold p-0 text-center" style="font-size: 14px;">Squalize</p>
-						</div>
-					
-						<div class="col-4 col-md-2 col-lg-1">
-							<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/apacheairflow/apacheairflow-original.svg" />
-							<p class="fw-bold p-0 text-center" style="font-size: 14px;">AirFlow</p>
-						</div>
-					</div>
-					<div class="container mb-4" data-aos="fade-up">
-						<div class="fw-bold fs-4 my-2"> Intereses:</div>
-						<div class="row">
-							<div class="col-4 col-md-2 col-lg-1">
-								<img
-									src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/azure/azure-original.svg" />
-								<p class="fw-bold p-0 text-center" style="font-size: 14px;">+Azure</p>
-							</div>
-							<div class="col-4 col-md-2 col-lg-1">
-								<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/r/r-original.svg" />
-								<p class="fw-bold p-0 text-center" style="font-size: 14px;">+R</p>
-							</div>
-							<div class="col-4 col-md-2 col-lg-1">
-								<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/travis/travis-plain.svg" />
-								<p class="fw-bold p-0 text-center" style="font-size: 14px;">+Travis</p>
-							</div>
-						</div>
-						<!-- 
-            			<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/filezilla/filezilla-plain.svg" />
-            			<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/krakenjs/krakenjs-original.svg" />
-            			<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original.svg" />
-            			<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/putty/putty-original.svg" />
-						<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/ssh/ssh-original-wordmark.svg" />
-						<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg" />
-						<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/threejs/threejs-original.svg" />
-					 -->
-					</div>
-				</div>
-		</section><!-- End Skills Section -->
-
-
-		<!-- ======= About Section ======= -->
-		<section id="about" class="about">
-			<div class="container">
-
-				<div class="section-title">
-					<h2>Sobre Mi</h2>
-					<p>
-						* Un apasionado desarrollador de software con un amor por el desarrollo backend, los
-							datos y la informática en general.
-						<br>* Soy meticuloso y estoy siempre aprendiendo más acerca de mi rol, tanto para
-						mantenerse al día y
-						para ampliar mis habilidades, comprometido con la actualización continua y la
-						adopción de mejores prácticas en el desarrollo de software y la gestión de datos.
-						<br>* Siempre buscando la creación de soluciones escalables y eficientes de acuerdo
-						a los requerimientos,
-						desarrollando aplicaciones escalables, gestión eficiente de bases de datos y un
-						análisis de datos adecuados.
-						<br>* Amplio conocimiento en tecnologías como Java, Python y herramientas de Google
-						Cloud Platform (GCP), como BigQuery y Cloud SQL.
-						<br>* Demostrada capacidad para diseñar soluciones eficaces, implementar prácticas
-						de desarrollo sólidas y optimizar el rendimiento de aplicaciones.
-						<br>* Con habilidades demostradas en colaborar en entornos multidisciplinarios para
-						alcanzar objetivos empresariales.
-					</p>
-				</div>
-				<div class="row">
-					<div class="about-img-container col-lg-4 text-center" data-aos="fade-right">
-						<img loading="lazy" src="assets/img/profile1.jpg" class="img-fluid" alt="">
-					</div>
-					<div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
-						<h3>Desarrollador de Software</h3>
-						<p class="font-italic fw-bold">
-							Php(Laravel) | Node.js(Express.js,Nest.js ) | JavaScript | TypeScript
-							| Python(Django,NumPy,Pandas,Matplotlib)
-							| Angular | Vue.js | Nuxt.js | MongoDB | Sql Server | MySQL
-							| PostgreSQL | CloudSQL | Bigquery | Docker | Kubernetes
-						</p>
-						<div class="row  pt-2">
-							<div class="col-lg-6">
-								<ul>
-									<!-- <li><i class="icofont-rounded-right"></i> <strong>Birthday:</strong> 8 enero</li> -->
-									<li><i class="icofont-rounded-right"></i> <strong>Nombre:</strong> Moisés Escobar
-										Martínez</li>
-									<li><i class="icofont-rounded-right"></i> <strong>Teléfono:</strong><a
-											href="https://wa.me/+529661006460" target="_blank">
-											+52-966-1006460</a></li>
-									<li><i class="icofont-rounded-right"></i> <strong>Ciudad:</strong> Querétaro,Mexico
-									</li>
-									<li><i class="icofont-rounded-right"></i> <strong>Portafolio GitHub:</strong>
-										<a href="https://github.com/moisesEscobar" target="_blank" class="github">
-											moisesEscobar
-										</a>
-									</li>
-								</ul>
-							</div>
-							<div class="col-lg-6">
-								<ul>
-									<li><i class="icofont-rounded-right"></i> <strong>Edad:</strong> 27</li>
-									<li><i class="icofont-rounded-right"></i> <strong>Ingeniaría:</strong> Terminada
-									</li>
-									<li><i class="icofont-rounded-right"></i> <strong>Correo:</strong> <a
-											href="mailto:moises.e.mtz@gmail.com">moises.e.mtz@gmail.com</a></li>
-									<li><i class="icofont-rounded-right"></i> <strong>LinkedIn:</strong>
-										<a href="https://www.linkedin.com/in/moises-escobar-martinez" target="_blank"
-											class="github">
-											moises_escobar
-										</a>
-									</li>
-								</ul>
-							</div>
-							<div class="col-lg-12">
-								<ul>
-									<li><i class="icofont-rounded-right"></i> <strong>Tipo Empleo | Modalidad:</strong>
-										Tiempo completo
-										| Tiempo Parcial | Proyecto | Remoto | Flexible</li>
-						
-									<!-- <li><i class="icofont-rounded-right"></i> <strong>Disponibilidad:</strong> 2 Sem
-										<span class="online"></span></li> -->
-								</ul>
-								
-							</div>
-						</div>
-					</div>
-				</div>
-
-			</div>
-		</section><!-- End About Section -->
-
-
-		<!-- ======= Resume Section ======= -->
-		<section id="resume" class="resume">
-			<div class="container">
-
-				<div class="section-title">
-					<h2>Resumen</h2>
-				</div>
-
-				<div class="row">
-					<div class="col-lg-6" data-aos="fade-up">
-						<h3 class="resume-title">Resumen</h3>
-						<div class="resume-item pb-0">
-							<h4>Moisés Escobar Martínez</h4>
-							<p><em>
-									<br>*Desarrollador de software con 4 años de experiencia, especializado en backend,
-									análisis de datos y proyectos en la nube.
-									<br>*Graduado en Ingeniería en Desarrollo de Software por la Universidad Politécnica de
-									Chiapas.
-									<br>*Contribuí significativamente a empresas como 2bcore, Soriana, GetIt e Integración de
-									Energía, desempeñando roles de desarrollador backend, web, PHP, analista de datos e
-									ingeniero de datos.
-									<br>*Destaco por mi meticulosidad, comunicación, trabajo en equipo, autodidactismo y
-									proactividad, con historial de éxito en entornos multidisciplinarios.
-									<br>*Amplia experiencia geográfica y capacidad para abordar desafíos complejos.
-									<br>*Enfocado en la excelencia técnica y la adaptabilidad, respaldado por sólida
-									formación educativa y trayectoria probada en diversas áreas funcionales.
-									Comprometido con la innovación y la mejora continua, listo para aportar mis
-									habilidades a un nuevo entorno de trabajo dinámico y desafiante.
-								</em></p>
-							<ul>
-								<li>Querétaro,Mexico</li>
-								<li><a href="https://wa.me/+529661006460" target="_blank">+52-966-100-6460</a></li>
-								<li><a href="mailto:moises.e.mtz@gmail.com">moises.e.mtz@gmail.com</a></li>
-							</ul>
-						</div>
-					</div>
-					<div class="col-lg-6" data-aos="fade-up">
-						<h3 class="resume-title">Educación</h3>
-						<div class="resume-item">
-							<h4>Ingeniería en desarrollo de software</h4>
-							<h5>2016 – 2020</h5>
-							<p class="fw-bold">Universidad politécnica de Chiapas</p>
-							<p><em> Suchiapa,Chiapas,Mexico.</em></p>
-							<!-- <p>Notas - <strong>98</strong> de 100</p> -->
-							<p>
-								<b>Competencias: </b>
-							</p>
-						</div>
-						<div class="resume-item">
-							<h4>Físico Matemático Preparatoria</h4>
-							<h5>2013 - 2016</h5>
-							<p class="fw-bold">Juan Sabinez Gutiérrez</p>
-							<p><em>Tiltepec,Chiapas,Mexico.</em></p>
-							<!-- <p>Notas - <strong>90</strong> de 100</p> -->
-						</div>
-						<!-- <div class="resume-item">
-							<h4>Otros estudios </h4>
-							<h5>2021-....</h5>
-							<p>
-								<b>Cursos: </b>
-							</p>
-							<p>
-								<b>Certificaciones: </b>
-							</p>
-						</div> -->
-
-						<h3 class="resume-title">Idiomas</h3>
-						<div class="resume-item">
-							<ul>
-								<li>Español: Nativo</li>
-								<li>Ingles: Básico/Técnico</li>
-							</ul>
-						</div>
-						<!-- <h3 class="resume-title">Aptitudes</h3>
-						<div class="resume-item">
-							<ul>
-								<li>Honesto</li>
-								<li>Responsable</li>
-								<li>Proactivo</li>
-								<li>Flexible</li>
-								<li>Autodidacta</li>
-								<li>Trabajo en equipo</li>
-							</ul>
-						</div>
-						<h3 class="resume-title">Intereses</h3>
-						<div class="resume-item">
-							<ul>
-								<li>Certificaciones</li>
-								<li>Nuevas tecnologías</li>
-								<li>Inteligencia Artificial</li>
-								<li>Soluciones basadas en datos</li>
-								<li>Procesos ETL Y Orquestaciones de procesos</li>
-								<li>Videojuegos Móviles</li>
-								<li>Animación</li>
-								<li>Mangas</li>
-								<li>Cine</li>
-							</ul>
-						</div> -->
-					</div>
-
-					<div class="col-lg-12" data-aos="fade-up" data-aos-delay="100">
-						<h3 class="resume-title">Experiencia Profesional</h3>
-						<div class="resume-item">
-							<h2>Hostech</h2>
-							<h4>Desarrollador Backend</h4>
-							<h5 id="actual">12/2023 - Presente </strong></h5>
-							<h5>/ Tiempo parcial</h5>
-							<p><em>Mérida, Yucatan,Mexico.</em></p>
-							<!-- <p> <strong> SitioWeb: </strong><a href="https://getitcompany.com/" target="_blank">https://getitcompany.com/</a></p> -->
-							<p>
-								<b>Actividades: </b>
-								<br>
-							<ul>
-								<li>Desarrollo de APIs con Node.js, NestJS, JavaScript y TypeScript, utilizando bases de datos como MariaDB, PostgreSQL , MongoDB y Redis.</li>
-								<li>Soporte y mantenimiento de sistemas en PHP y Laravel.</li>
-								<li>Experiencia en entornos Docker y administración de servidores en Digital Ocean.</li>
-								<li>Manejo de entornos replicativos en MySQL, PostgreSQL y MongoDB y optimización de bases de datos y consultas</li>
-							</ul>
-							</p>
-							<p>
-								<b>Competencias: </b>
-								<br>Autoaprendizaje Eficiente | Gestión de tiempo | Colaboración Efectiva | Adaptabilidad |
-								JavaScript | TypeScript | NodeJs | Nestjs | Digital Ocean | Laravel | PHP  | MariaDb | MySQL | PostgresQL | Redis | MVC | 
-								Docker | Servidores | Pruebas Unitarias | Documentación | Swagger | Postman |
-								GitHub | Bitbucket | Jira | Cliente-Servidor | Capacidad analítica | Metodología Incremental | SCRUM | Toma de Decisiones | Capacidad
-								analítica | Proactivo | Trabajo bajo presión
-							</p>
-						</div>
-						<div class="resume-item">
-							<h2>GetIt Company</h2>
-							<h4>Desarrollador Backend</h4>
-							<h5 id="getit">09/2020 - Presente </strong></h5>
-							<h5>/ Tiempo parcial</h5>
-							<p><em>Santiago de Querétaro,Querétaro,Mexico.</em></p>
-							<!-- <p> <strong> SitioWeb: </strong><a href="https://getitcompany.com/" target="_blank">https://getitcompany.com/</a></p> -->
-							<p>
-								<b>Actividades: </b>
-								<br>
-							<ul>
-								<li>Desarrollé y mantuve páginas web estáticas en PHP y JavaScript.</li>
-								<li>Desarrollé API REST para la extracción y análisis de información de autopistas.</li>
-								<li>Desarrollé consultas y modelos para el cálculo y representación de indicadores.</li>
-								<li>Administré y optimicé bases de datos en MySQL y SQLServer.</li>
-								<li>Participé en la optimización, monitoreo y mantenimiento de servidores web.</li>
-								<li>Contribuí al diseño y maquetación de sitios en HTML.</li>
-								<li>Colaboré en la recopilación de requerimientos, implementación y despliegue de
-									desarrollos a medida.</li>
-								<li>Participé en la personalización de un sistema CORE para varias empresas del ramo de
-									autopistas y carreteras.</li>
-								<li>Contribuí a la incorporación de la metodología ágil SCRUM.</li>
-								<li>Participé en la integración e implementación de integración y despliegues continuos.
-								</li>
-							</ul>
-							</p>
-							<p>
-								<b>Competencias: </b>
-								<br>Autoaprendizaje Eficiente | PHP nativo | Laravel | Servidores WEB | SQL | MySQL |
-								PostgreSQL | Trabajo autónomo | Trabajo en equipo |
-								Trello | Jira | GitHub | BitBuckect | HTML | CSS | Capacidad analitica | Aanlista de
-								detos | JQuery | MVC | ClienteServidor | Angular
-							</p>
-						</div>
-						<div class="resume-item">
-							<h2>Independiente</h2>
-							<h4>Desarrollador De Software</h4>
-							<h5>07/2022 - 12/2023 (1.5 años)</strong></h5>
-							<h5>/ Tiempo parcial</h5>
-							<p><em>Santiago de Querétaro, Querétaro,Mexico.</em></p>
-							<!-- <p> <strong> SitioWeb: </strong><a href="https://getitcompany.com/" target="_blank">https://getitcompany.com/</a></p> -->
-							<p>
-								<b>Actividades: </b>
-								<br>
-							<ul>
-								<li>Colaboré en el desarrollo del backend y frontend de una plataforma tipo Uber para el
-									estado de Veracruz, además de participar en el desarrollo del sistema web de
-									gestión.</li>
-								<li>Contribuí al desarrollo de un CRM en el backend y frontend para una empresa de
-									ventas de celulares en el Estado de México.</li>
-								<li>Colaboré en el desarrollo de nuevos indicadores para un sistema personalizable en
-									varias autopistas del Estado de México.</li>
-								<li>Desarrollé y documenté varias API Rest en Adonis Js para proyectos escolares.</li>
-								<li>Colaboré en la integración de OpenPay y PayPal en un sistema web de cobros por
-									suscripciones para una empresa en el Estado de Chiapas.</li>
-								<li>Inicié el desarrollo de un sistema web para la gestión y realización de sorteos en
-									línea.</li>
-								<li>Participé en la administración y configuración de servicios web, así como en el
-									despliegue de algunas páginas web estáticas.</li>
-								<li>Administré y optimicé recursos en bases de datos.</li>
-							</ul>
-							</p>
-							<p>
-								<b>Competencias: </b>
-								<br>Autoaprendizaje Eficiente | Gestión | Colaboración Efectiva | Adaptabilidad |
-								JavaScript | TypeScript | AdonisJs | Angular | AWS | WHM | Laravel | PHP | jQuery |
-								Integraciones de métodos de pago | MVC | Trello | GitHub | Cliente-Servidor | Capacidad
-								analítica | SQL | PostgreSQL | MySQL |
-								SQLServer | Ionic | Metodología Incremental | SCRUM | Toma de Decisiones | Capacidad
-								analítica | Proactivo | Trabajo bajo presión
-							</p>
-						</div>
-						<div class="resume-item">
-							<h2>2bcore</h2>
-							<h4>Desarrollador Backend / Analista De Datos / Ingeniero de datos</h4>
-							<h5 id="2bcore">07/2021 - 11/2023 (2.4 años) / Tiempo completo</h5>
-							<p><em>Santiago de Querétaro,Querétaro,Mexico</em></p>
-							<!-- <p> <strong> SitioWeb: </strong><a href="https://www.2bcore.com/" target="_blank">https://www.2bcore.com/</a></p> -->
-							<p>
-								<b>Actividades: </b>
-								<br><strong>Como Desarrollador Backend.</strong>
-							<ul>
-								<li>Planifiqué, desarrollé y realicé pruebas y liberación de rutas para APIs en sistemas
-									web de gestión (norma31, integraciones con SAP, Jira, Confluence, intranet, cursos).
-								</li>
-								<li>Documenté las APIs liberadas en Postman, Swagger y ApiDoc.</li>
-								<li>Integré métodos de pago como PayPal y Mercado Libre.</li>
-								<li>Participé en el consumo de las APIs en el frontend con Angular.</li>
-								<li>Colaboré en proyectos con arquitectura de capas y cliente-servidor.</li>
-								<li>Realicé consultas y queries avanzados en MongoDB.</li>
-							</ul>
-
-							<strong>Como Analista de Datos asignado a SORIANA.</strong>
-							<br>
-							<ul>
-								<li>Identifiqué, recopilé y extraje datos de usuarios, transacciones y comportamientos
-									de bases de MySQL Server, Analytics, Salesforce, CRM, Facebook, etc.</li>
-								<li>Participé en la limpieza, depuración y normalización de datos para garantizar la
-									calidad.</li>
-								<li>Realicé análisis exploratorios en bases de datos para entender estructuras y
-									características.</li>
-								<li>Desarrollé visualizaciones de datos en Excel, Looker ML, Looker Studio y PowerBI.
-								</li>
-								<li>Colaboré con equipos interdisciplinarios para comprender necesidades y objetivos del
-									negocio.</li>
-								<li>Creé y automatice procesos en SQL Server.</li>
-							</ul>
-
-							<strong>Como Ingeniero de Datos asignado a SORIANA en un proyecto en Google Cloud Platform.</strong>
-							<br>
-							<ul>
-								<li>Participé en el mantenimiento, mejora y nuevos desarrollos de un Customer Data
-									Platform.</li>
-								<li>Identifiqué y recopilé datos efectivamente de diversas fuentes.</li>
-								<li>Limpieza y procesamiento de datos para garantizar calidad y uniformidad.</li>
-								<li>Desarrollé, mantuve y automatice procesos ETL.</li>
-								<li>Implementé, gestioné, monitoreé y optimicé almacenes de datos.</li>
-								<li>Participé en la implementación y entrenamiento de modelos de aprendizaje con AutoML.
-								</li>
-								<li>Desarrollé servicios REST en Cloud Functions y Cloud Run con Python y Node.js.</li>
-								<li>Colaboré con equipos interdisciplinarios para comprender las necesidades del
-									negocio.</li>
-								<li>Desarrollé modelado de datos para nuevos requerimientos y mejoras.</li>
-								<li>Supervisé la integridad y calidad de datos de manera eficiente y continua.</li>
-								<li>Documenté procesos, flujos de datos y esquemas para facilitar la colaboración entre
-									equipos.</li>
-							</ul>
-							</p>
-							<p>
-								<b>Competencias: </b>
-								<br>Autoaprendizaje Eficiente | Aprendizaje Continuo | Habilidades de Programación |
-								Node.js | Express.js | MongoDB | Python | Airflow | MySQL | SQLServer | BigQuery |
-								CloudSQL | Visualización de Datos | Looker ML | Looker Studio | PowerBI | Curiosidad |
-								Perfeccionista | Comunicación Efectiva |
-								Resolución de Problemas | Modelado de Datos | ETL (Extract, Transform, Load) |
-								Optimización | Gestión de Almacenamiento | Colaboración Efectiva | Automatización |
-								Google Cloud (App Engine, BigQuery, Cloud AutoML, Cloud Composer, Cloud Dataprep, Cloud
-								Functions, Cloud IAM, Cloud Logging, Cloud SQL, Cloud Storage, Cloud VPC, Compute
-								Engine, etc.) |
-								Azure DevOps | Data Factory | SCRUM
-							</p>
-						</div>
-						<div class="resume-item">
-							<h2>Integración de energía</h2>
-							<h4>Auxiliar de sistemas</h4>
-							<h5>06/2020 - 09/2020 (4 meses) / Tiempo completo</h5>
-							<p><em>Santiago de Querétaro,Querétaro,Mexico</em></p>
-							<!-- <p> <strong> SitioWeb: </strong><a href="https://interaccion-electrica.com/" target="_blank">https://interaccion-electrica.com/</a></p> -->
-							<p>
-								<b>Actividades: </b>
-								<br>
-							<ul>
-								<li>Brindé soporte remoto y presencial en paquetería Office y otras herramientas de la
-									empresa.</li>
-								<li>Participé en la generación de nuevas cuentas, correos y accesos para nuevas
-									contrataciones.</li>
-								<li>Contribuí al mantenimiento y mejora de sistemas con estructuras de un CRM y ERP.
-								</li>
-								<li>Desarrollé un sistema multiplataforma de entradas y salidas conectado a nuestro CRM.
-								</li>
-								<li>Participé en la mejora y optimización de procesos y consultas SQL.</li>
-								<li>Colaboré en la gestión y planificación de nuevos proyectos de software.</li>
-								<li>Participé en la adopción inicial de la metodología ágil SCRUM.</li>
-								<li>Desarrollé soluciones implementando la arquitectura cliente-servidor.</li>
-								<li>Colaboré en la adopción y ajuste de sistemas ERM y CRM con empresas asociadas.</li>
-							</ul>
-							</p>
-							<p>
-								<b>Competencias </b>
-								<br> Autodidacta | Gestión | Comunicación Efectiva | Resolución de Problemas | Toma de
-								Decisiones | Colaboración Efectiva | Adaptabilidad |
-								Trabajo en equipo | PHP | Laravel | Trello | SQL | MySQL | JavaScript | GitHub | HTML5 |
-								Bootstrap | CSS3 | jQuery |
-								SCRUM | MVC | Arquitectura de capas, monolítica y cliente-servidor | Adonis js | Ionic
-							</p>
-							<h4>Area de sistemas (Practicas)</h4>
-							<h5>01/2020 - 05/2020 (5 meses) / Tiempo completo</h5>
-							<p>
-								<b>Actividades </b>
-								<br>
-							<ul>
-								<li>Lideré, desarrolle e implemente un nuevo desarrollo, cuyo requerimiento era la
-									gestión y visualización de los proyectos desarrollados por la empresa.</li>
-								<li>Participé de manera integral en el desarrollo del sistema web,
-									liderando cada etapa desde la definición de objetivos y alcances hasta la
-									capacitación y
-									documentación de todas las áreas involucradas.
-									Este proceso incluyó la meticulosa recopilación y análisis de requerimientos, la
-									selección de Laravel como tecnología central, la implementación de una arquitectura
-									de
-									capas para el sistema y la ejecución de pruebas exhaustivas.
-									Además, coordiné el despliegue exitoso del sistema, asegurando su funcionamiento
-									eficiente y proporcionando capacitación detallada y documentación completa para
-									garantizar la adopción efectiva en toda la organización.</li>
-								<li>Coordiné reuniones y entregas semanales para mantener a todas las partes informadas.
-								</li>
-								<li>Fui pionero en la implementación eficaz del control de versiones
-									con GitHub.</li>
-							</ul>
-							</p>
-							<p>
-								<b>Competencias </b>
-								<br> Autodidacta | Gestión | Comunicación Efectiva |
-								Resolución de Problemas | Toma de Decisiones | Colaboración Efectiva | Adaptabilidad |
-								PHP | Laravel | SQL | MySQL | JavaScript | GitHub | HTML5 | Bootstrap | CSS3 | jQuery |
-								Metodología Incremental | MVC (Model-View-Controller)
-							</p>
-						</div>
-						<div class="resume-item">
-							<h2>Código Facilito</h2>
-							<h4>Desarrollador Ruby On Rails (Practicas)</h4>
-							<h5>08/2018 - 09/2018 (2 meses) / Tiempo completo</h5>
-							<p><em>Tuxtla Gutiérrez,Chiapas,Mexico </em></p>
-							<!-- <p> <strong> SitioWeb: </strong><a href="https://interaccion-electrica.com/" target="_blank">https://interaccion-electrica.com/</a></p> -->
-							<p>
-								<b>Actividades </b>
-								<br>
-							<ul>
-								<li>Colaboré en el desarrollo de la plataforma web "Facilito Talks"
-									para la organización de eventos y charlas presenciales.</li>
-								<li>Desarrollé modelos, migraciones y nuevos controladores para el
-									módulo de gestión y visualización de eventos.</li>
-								<li>Instalé y configuré las librerías necesarias en Ruby On Rails
-									para respaldar el desarrollo del proyecto.</li>
-								<li>Contribuí al control de versiones en GitHub, garantizando una
-									colaboración eficaz y la integridad del código.</li>
-							</ul>
-							<!-- Autoaprendizaje Eficiente -->
-							</p>
-							<p>
-								<b>Competencias </b>
-								<br> Autodidacta | Ruby on Rails | Colaboración Efectiva | HTML5 | Bootstrap | SQL
-								Server | GitHub | MVC (Model-View-Controller)
-							</p>
-						</div>
-						<div class="resume-item">
-							<h2>Appcender</h2>
-							<h4>Desarrollador de Software (Practicas)</h4>
-							<h5>08/2017 - 09/2017 (2 meses) / Tiempo completo</h5>
-							<p><em>Tuxtla Gutierrez,Chiapas,Mexico</em></p>
-							<!-- <p> <strong> SitioWeb: </strong><a href="https://interaccion-electrica.com/" target="_blank">https://interaccion-electrica.com/</a></p> -->
-							<p>
-								<b>Actividades: </b>
-								<br>
-							<ul>
-								<li>Participé la maquetación de una página web para una plataforma de
-									cursos.</li>
-								<li>Generé cuestionarios interactivos y gestioné su almacenamiento
-									eficiente en una base de datos.</li>
-								<li>Implementé la integración del sistema-web y la extracción de
-									datos de los cuestionarios.</li>
-								<li>Contribuí al control de versiones en GitHub, asegurando una
-									colaboración eficaz.</li>
-							</ul>
-							</p>
-							<p>
-								<b>Competencias: </b>
-								<br>Colaboración Efectiva | Html5 | Bootstrap | SQL Server | GitHub
-							</p>
-						</div>
-					</div>
-				</div>
-
-			</div>
-		</section><!-- End Resume Section -->
-
-		<!-- ======= Contact Section ======= -->
-		<section id="contact" class="contact">
-			<div class="container">
-				<div class="section-title">
-					<h2>Contacto</h2>
-				</div>
-				<div class="row" data-aos="fade-in">
-					<div class="col-lg-12 d-flex align-items-stretch">
-						<div class="info">
-							<div class="address">
-								<i class="icofont-google-map"></i>
-								<h4>Dirección:</h4>
-								<p>Santiago Querétaro,Querétaro,Mexico</p>
-							</div>
-							<div class="email">
-								<i class="icofont-envelope"></i>
-								<h4>Correo:</h4>
-								<p><a href="mailto:moises.e.mtz@gmail.com">moises.e.mtz@gmail.com</a></p>
-							</div>
-							<div class="phone">
-								<i class="icofont-phone"></i>
-								<h4>Telefono:</h4>
-								<p><a href="https://wa.me/+529661006460" target="_blank">+52-966-100-6460</a></p>
-
-							</div>
-							<iframe
-								src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d70355.8236549993!2d-100.43419518705007!3d20.653638802831995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1squeretaro%20mexico%20iframe!5e0!3m2!1ses-419!2smx!4v1701450023413!5m2!1ses-419!2smx"
-								style="border:0; width: 100%; height: 290px;" allowfullscreen></iframe>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-		<!-- End Contact Section -->
-
-	</main>
-	<!-- End #main -->
-
-	<!-- ======= Footer ======= -->
-	<footer id="footer">
-		<div class="container">
-			<div class="copyright">
-				&copy; Copyright <strong><span id="cyear">2023</span></strong>
-			</div>
-			<div class="credits">
-				<!-- All the links in the footer should remain intact. -->
-				<!-- You can delete the links only if you purchased the pro version. -->
-				<!-- Licensing information: https://bootstrapmade.com/license/ -->
-				<!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/ -->
-				<a class="fw-bolder" href="https://www.linkedin.com/in/moises-escobar-martinez" target="_blank">Moisés
-					Escobar Martínez</a>
-			</div>
-			
-			<div class="d-flex justify-content-center">
-				<!-- web counter -->
-				<p title="Visitantes"> <img
-						src="https://counter7.optistats.ovh/private/contadorvisitasgratis.php?c=quq55mpsezfqwrhqhtunj1q81kabffsn"
-						border="0" title="Visitantes" alt="Visitantes"></p> 
-			</div>
-		</div>
-	</footer>
-	<!-- End  Footer -->
-
-	<a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
-
-	<!-- Vendor JS Files -->
-	<script type="text/javascript">
-		document.getElementById("hideAll").style.display = "block";
-		document.getElementById("fb-root").style.display = "none";
-		document.body.style.overflow = "hidden";
-	</script>
-	<script src="assets/vendor/jquery/jquery.min.js"></script>
-	<script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-	<script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
-	<script src="assets/vendor/waypoints/jquery.waypoints.min.js"></script>
-	<script src="assets/vendor/counterup/counterup.min.js"></script>
-	<script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-	<script src="assets/vendor/venobox/venobox.min.js"></script>
-	<script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
-	<script src="assets/vendor/typed.js/typed.min.js"></script>
-	<script src="assets/vendor/aos/aos.js"></script>
-	<!-- Template Main JS File -->
-	<script src="assets/js/main.js"></script>
-
-	<script>
-		var d = new Date();
-		document.getElementById("cyear").innerHTML = d.getFullYear();
-	</script>
-
-	<!-- particle -->
-	<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-	<script src="assets/js/particles.js"></script>
-
-	<!-- ripple effect -->
-	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-	<script src="https://unpkg.com/jquery.ripples@0.6.3/dist/jquery.ripples.js"></script>
-	<script>
-		(function ($) {
-			$(document).ready(function () {
-				const target = $(".ripple");
-				target.ripples({
-					resolution: 460,
-					dropRadius: 20, //px
-					perturbance: 0.04
-				});
-			});
-		})(jQuery);
-	</script>
-
-	<!-- Swiper JS -->
-	<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-
-	<!-- Initialize Swiper -->
-	<script>
-		var swiper = new Swiper(".mySwiper", {
-			spaceBetween: 30,
-			centeredSlides: true,
-			loop: true,
-			grabCursor: true,
-			effect: "creative",
-			creativeEffect: {
-				prev: {
-					shadow: true,
-					translate: [0, 0, -400],
-				},
-				next: {
-					translate: ["100%", 0, 0],
-				},
-			},
-			autoplay: {
-				delay: 2500,
-				disableOnInteraction: false,
-			},
-			pagination: {
-				el: ".swiper-pagination",
-				clickable: true,
-			},
-			navigation: {
-				nextEl: ".swiper-button-next",
-				prevEl: ".swiper-button-prev",
-			},
-		});
-	</script>
-	<script>
-		window.onload = function () {
-			document.getElementById("hideAll").style.display = "none";
-			document.getElementById("fb-root").style.display = "block";
-			document.body.style.overflow = "auto";
-		}
-	</script>
-
-	<!-- Google tag (gtag.js) -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=G-5CL4D3MZ5C"></script>
-	<script>
-		window.dataLayer = window.dataLayer || [];
-		function gtag() {
-			window.dataLayer.push(arguments);
-		}
-		gtag('js', new Date());
-		gtag('config', 'G-5CL4D3MZ5C');
-	</script>
-	<script>
-		function getDateTimeDiff(from, to) {
-			let fromDateTime = new Date(from)
-			let toDateTime = new Date(to)
-			let result = toDateTime - fromDateTime
-
-			const minute = 1000 * 60;
-			const hour = minute * 60;
-			const day = hour * 24;
-			const month = day * 30;
-			const year = day * 365;
-
-			// Divide Time with a year
-			let years = Math.floor(result / year);
-			let months = Math.floor(result / month) - years * 12;
-
-			let message = ""
-			message += years > 0 ? years : "0"
-			message += months > 0 ? "." + months : ".1"
-			message += " años"
-			return message
-		}
-		document.getElementById("actual").innerHTML += ` (${getDateTimeDiff("2023-12-18", new Date())})`;
-		document.getElementById("getit").innerHTML += ` (${getDateTimeDiff("2020-09-18", new Date())})`;
-	</script>
-</body>
-
+      <section class="section" id="education" aria-labelledby="education-title">
+        <div class="section-heading">
+          <p class="eyebrow">Formación e idiomas</p>
+          <h2 id="education-title">Una base para seguir aprendiendo.</h2>
+        </div>
+        <div class="education-grid">
+          <article class="education-card">
+            <p class="company">Universidad Politécnica de Chiapas</p>
+            <h3>Ingeniería en Desarrollo de Software</h3>
+            <p>2016 — 2020 · Titulado</p>
+            <p class="muted">Suchiapa, Chiapas, México</p>
+          </article>
+          <article class="education-card">
+            <h3>Comunicación y colaboración</h3>
+            <p>
+              <strong>Español:</strong> nativo<br /><strong>Inglés:</strong>
+              técnico
+            </p>
+            <p class="muted">
+              Pensamiento analítico, resolución de problemas, comunicación
+              técnica y gestión de prioridades.
+            </p>
+          </article>
+        </div>
+      </section>
+      <section
+        class="section contact-section"
+        id="contact"
+        aria-labelledby="contact-title"
+      >
+        <p class="eyebrow">Siguiente conversación</p>
+        <h2 id="contact-title">¿Construimos algo juntos?</h2>
+        <p>
+          Si tu equipo necesita conectar sistemas, desarrollar servicios backend
+          o mejorar sus procesos de datos, será un gusto conversar.
+        </p>
+        <a class="contact-email" href="mailto:moises.e.mtz@gmail.com"
+          >moises.e.mtz@gmail.com <span aria-hidden="true">↗</span></a
+        >
+        <div class="contact-links">
+          <a
+            href="https://www.linkedin.com/in/moises-escobar-martinez"
+            target="_blank"
+            rel="noopener noreferrer"
+            >LinkedIn ↗</a
+          ><a
+            href="https://github.com/moisesEscobar"
+            target="_blank"
+            rel="noopener noreferrer"
+            >GitHub ↗</a
+          ><a
+            href="https://wa.me/529661006460"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Contactar por WhatsApp al +52 966 100 6460"
+            >WhatsApp · +52 966 100 6460 ↗</a
+          >
+        </div>
+        <p class="contact-location">
+          Querétaro, México · Experiencia en colaboración remota
+        </p>
+      </section>
+      <footer class="footer">
+        <p>© <span id="cyear">2026</span> Moisés Escobar Martínez</p>
+        <a
+          href="assets/docs/CV_Moises_Escobar_Martinez.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
+          >Ver CV en PDF ↗</a
+        >
+      </footer>
+    </main>
+    <a class="back-to-top" href="#inicio" aria-label="Volver al inicio">↑</a>
+  </body>
 </html>

@@ -1,21 +1,24 @@
-# My personal website
-This repository contains the files needed for my personal static page, based on the template [iPortfolio](https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/).
-The page is built with HTML, CSS (Bootstrap) and is hosted on GitHub Pages.
+﻿# Portafolio de Moisés Escobar Martínez
 
-## Preview
-You can see the page in action [here](https://moisesescobar.github.io).
+Portafolio de desarrollo backend, integraciones empresariales e ingeniería de datos. La web conserva el detalle profesional y ofrece la descarga del CV resumido.
 
-## Directory Structure
-- **index.html**: The main file containing the HTML content of the page.
-- **assets/css/**: Directory that stores the CSS styles, including Bootstrap.
-- **assets/img/**: Directory for storing images used on the page.
+Sitio: [moisesescobar.github.io](https://moisesescobar.github.io/).
 
-## How to Contribute
-If you wish to contribute to this project, I encourage you to do so! You can open issues to report bugs, suggest improvements, or submit pull requests.
+## Desarrollo local
 
-## Local Deployment
-If you prefer to check the page in your local environment, simply clone this repository and open the `index.html` file in your browser.
+Sin instalación de dependencias ni compilación. Abre `index.html` o inicia un servidor desde este directorio:
 
-````bash
-git https://github.com/moisesEscobar/moisesescobar.github.io.git
-cd moisesescobar.github.io.git
+## Archivos
+
+- `index.html`: experiencia, proyectos, tecnologías, formación y contacto.
+- `assets/css/style.css`: estilos adaptables e impresión.
+- `assets/js/main.js`: menú accesible, sección activa y mejoras de impresión.
+- `assets/img/`: retratos e icono del sitio.
+- `assets/docs/CV_Moises_Escobar_Martinez.pdf`: CV original facilitado en noviembre de 2026.
+
+## Publicación
+Compatible con GitHub Pages: publicar los archivos estáticos de la raíz. Esta actualización es local; no se ha desplegado desde la sesión.
+
+## Iconos de conocimientos
+
+Los SVG de `assets/img/technologies/` proceden de [Devicon v2.16.0](https://github.com/devicons/devicon/tree/v2.16.0), con su licencia incluida en ese directorio. Las tecnologías sin un logotipo incluido se identifican mediante siglas. El catálogo conserva los conocimientos de la versión anterior y muestra los intereses por separado.
